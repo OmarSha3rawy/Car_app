@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "tasks.h": "c",
+        "timer0_cfg.h": "c",
+        "timer0.h": "c",
+        "switch.h": "c",
+        "controller.h": "c"
+    },
+    "C_Cpp.intelliSenseEngineFallback": "Enabled"
+}
