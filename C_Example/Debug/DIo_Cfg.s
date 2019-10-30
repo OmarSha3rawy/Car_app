@@ -10,7 +10,7 @@ __zero_reg__ = 1
 .global	Dio_CfgArr
 	.section	.rodata.Dio_CfgArr,"a",@progbits
 	.type	Dio_CfgArr, @object
-	.size	Dio_CfgArr, 75
+	.size	Dio_CfgArr, 35
 Dio_CfgArr:
 	.byte	3
 	.byte	0
@@ -47,46 +47,6 @@ Dio_CfgArr:
 	.byte	1
 	.byte	2
 	.byte	0
-	.byte	2
-	.byte	2
-	.byte	1
-	.byte	2
-	.byte	0
-	.byte	2
-	.byte	3
-	.byte	1
-	.byte	2
-	.byte	0
-	.byte	2
-	.byte	4
-	.byte	1
-	.byte	2
-	.byte	0
-	.byte	2
-	.byte	5
-	.byte	1
-	.byte	2
-	.byte	0
-	.byte	2
-	.byte	6
-	.byte	1
-	.byte	2
-	.byte	0
-	.byte	2
-	.byte	7
-	.byte	1
-	.byte	2
-	.byte	0
-	.byte	1
-	.byte	0
-	.byte	1
-	.byte	2
-	.byte	0
-	.byte	1
-	.byte	7
-	.byte	0
-	.byte	0
-	.byte	2
 	.text
 .Letext0:
 	.file 1 "../MCAL/Dio/Dio_Cfg/../Dio_Src/../../../Std_Headers/Std_Types.h"
@@ -96,15 +56,15 @@ Dio_CfgArr:
 	.file 5 "../MCAL/Dio/Dio_Cfg/DIo_Cfg.c"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
-	.long	0x1f7
+	.long	0x1c7
 	.word	0x2
 	.long	.Ldebug_abbrev0
 	.byte	0x4
 	.uleb128 0x1
-	.long	.LASF45
+	.long	.LASF37
 	.byte	0xc
-	.long	.LASF46
-	.long	.LASF47
+	.long	.LASF38
+	.long	.LASF39
 	.long	.Ldebug_line0
 	.uleb128 0x2
 	.byte	0x1
@@ -232,7 +192,7 @@ Dio_CfgArr:
 	.long	0x1d
 	.byte	0x4
 	.byte	0xa
-	.long	0x16d
+	.long	0x13d
 	.uleb128 0x6
 	.long	.LASF22
 	.byte	0
@@ -257,38 +217,14 @@ Dio_CfgArr:
 	.uleb128 0x6
 	.long	.LASF29
 	.byte	0x7
-	.uleb128 0x6
-	.long	.LASF30
-	.byte	0x8
-	.uleb128 0x6
-	.long	.LASF31
-	.byte	0x9
-	.uleb128 0x6
-	.long	.LASF32
-	.byte	0xa
-	.uleb128 0x6
-	.long	.LASF33
-	.byte	0xb
-	.uleb128 0x6
-	.long	.LASF34
-	.byte	0xc
-	.uleb128 0x6
-	.long	.LASF35
-	.byte	0xd
-	.uleb128 0x6
-	.long	.LASF36
-	.byte	0xe
-	.uleb128 0x6
-	.long	.LASF37
-	.byte	0xf
 	.byte	0
 	.uleb128 0x9
 	.byte	0x5
 	.byte	0x3
 	.byte	0xa
-	.long	0x1bc
+	.long	0x18c
 	.uleb128 0xa
-	.long	.LASF38
+	.long	.LASF30
 	.byte	0x3
 	.byte	0xc
 	.long	0xab
@@ -296,7 +232,7 @@ Dio_CfgArr:
 	.byte	0x23
 	.uleb128 0
 	.uleb128 0xa
-	.long	.LASF39
+	.long	.LASF31
 	.byte	0x3
 	.byte	0xd
 	.long	0xf5
@@ -304,7 +240,7 @@ Dio_CfgArr:
 	.byte	0x23
 	.uleb128 0x1
 	.uleb128 0xa
-	.long	.LASF40
+	.long	.LASF32
 	.byte	0x3
 	.byte	0xe
 	.long	0x24
@@ -312,7 +248,7 @@ Dio_CfgArr:
 	.byte	0x23
 	.uleb128 0x2
 	.uleb128 0xa
-	.long	.LASF41
+	.long	.LASF33
 	.byte	0x3
 	.byte	0xf
 	.long	0x24
@@ -320,7 +256,7 @@ Dio_CfgArr:
 	.byte	0x23
 	.uleb128 0x3
 	.uleb128 0xa
-	.long	.LASF42
+	.long	.LASF34
 	.byte	0x3
 	.byte	0x10
 	.long	0x24
@@ -329,34 +265,34 @@ Dio_CfgArr:
 	.uleb128 0x4
 	.byte	0
 	.uleb128 0x3
-	.long	.LASF43
+	.long	.LASF35
 	.byte	0x3
 	.byte	0x11
-	.long	0x16d
+	.long	0x13d
 	.uleb128 0xb
-	.long	0x1de
-	.long	0x1d7
+	.long	0x1ae
+	.long	0x1a7
 	.uleb128 0xc
-	.long	0x1d7
-	.byte	0xe
+	.long	0x1a7
+	.byte	0x6
 	.byte	0
 	.uleb128 0x2
 	.byte	0x2
 	.byte	0x7
-	.long	.LASF44
+	.long	.LASF36
 	.uleb128 0xd
-	.long	0x1bc
+	.long	0x18c
 	.uleb128 0xe
-	.long	.LASF48
+	.long	.LASF40
 	.byte	0x5
 	.byte	0x6
-	.long	0x1f5
+	.long	0x1c5
 	.byte	0x1
 	.byte	0x5
 	.byte	0x3
 	.long	Dio_CfgArr
 	.uleb128 0xd
-	.long	0x1c7
+	.long	0x197
 	.byte	0
 	.section	.debug_abbrev,"",@progbits
 .Ldebug_abbrev0:
@@ -550,51 +486,39 @@ Dio_CfgArr:
 	.string	"Pins"
 .LASF3:
 	.string	"short int"
-.LASF44:
+.LASF36:
 	.string	"sizetype"
-.LASF43:
-	.string	"Dio_ChannelCfgTyp"
-.LASF48:
-	.string	"Dio_CfgArr"
-.LASF32:
-	.string	"DIO_SEG7_DB"
-.LASF41:
-	.string	"isPullUp"
-.LASF42:
-	.string	"initVal"
 .LASF35:
-	.string	"DIO_SEG7_DP"
+	.string	"Dio_ChannelCfgTyp"
+.LASF40:
+	.string	"Dio_CfgArr"
+.LASF33:
+	.string	"isPullUp"
+.LASF34:
+	.string	"initVal"
 .LASF6:
 	.string	"float"
-.LASF30:
-	.string	"DIO_SEG7_En2"
 .LASF18:
 	.string	"Ports"
 .LASF9:
 	.string	"long long int"
-.LASF37:
+.LASF29:
 	.string	"NUM_OF_CHANNELS"
 .LASF5:
 	.string	"long int"
 .LASF22:
 	.string	"DIO_SW_0"
-.LASF46:
+.LASF38:
 	.string	"../MCAL/Dio/Dio_Cfg/DIo_Cfg.c"
 .LASF0:
 	.string	"unsigned char"
 .LASF1:
 	.string	"signed char"
-.LASF31:
-	.string	"DIO_SEG7_DA"
 .LASF10:
 	.string	"long long unsigned int"
-.LASF33:
-	.string	"DIO_SEG7_DC"
-.LASF34:
-	.string	"DIO_SEG7_DD"
 .LASF8:
 	.string	"unsigned int"
-.LASF38:
+.LASF30:
 	.string	"PinPort"
 .LASF26:
 	.string	"DIO_LED_0"
@@ -610,19 +534,15 @@ Dio_CfgArr:
 	.string	"PORT_C"
 .LASF14:
 	.string	"PORT_D"
-.LASF36:
-	.string	"DIO_PWD_0"
-.LASF29:
-	.string	"DIO_SEG7_En1"
 .LASF11:
 	.string	"PORT_A"
 .LASF17:
 	.string	"ePortsTyp"
-.LASF40:
+.LASF32:
 	.string	"PinDir"
 .LASF15:
 	.string	"MAX_NUM_OF_PORTS"
-.LASF39:
+.LASF31:
 	.string	"PinNum"
 .LASF4:
 	.string	"long unsigned int"
@@ -630,9 +550,9 @@ Dio_CfgArr:
 	.string	"double"
 .LASF20:
 	.string	"MAX_NUM_OF_PINS"
-.LASF45:
+.LASF37:
 	.string	"GNU C99 5.4.0 -mn-flash=1 -mno-skip-bug -mmcu=avr5 -g2 -O1 -std=gnu99 -funsigned-char -funsigned-bitfields -ffunction-sections -fdata-sections -fpack-struct -fshort-enums"
-.LASF47:
+.LASF39:
 	.string	"X:\\\\VALEO_testing_academy\\\\challenge1\\\\C_ExampleTraineeVersion\\\\C_Example\\\\Debug"
 .LASF23:
 	.string	"DIO_SW_1"

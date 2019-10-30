@@ -14,14 +14,6 @@ HAL\Led\Led_Cfg\Led_Cfg.c
 
 HAL\Led\Led_Src\Led.c
 
-HAL\PWD\PWD_Cfg\Pwd_Cfg.c
-
-HAL\PWD\PWD_Src\Pwd.c
-
-HAL\Seg7\Seg7_Cfg\Seg7_Cfg.c
-
-HAL\Seg7\Seg7_Src\Seg7.c
-
 HAL\Switch\Switch_Cfg\Switch_Cfg.c
 
 HAL\Switch\Switch_Src\Switch.c

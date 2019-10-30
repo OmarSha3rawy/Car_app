@@ -5,29 +5,29 @@ Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
   0 .text         00000c14  00000000  00000000  00000094  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  1 .data         0000005e  00800060  00000c14  00000ca8  2**0
+  1 .data         00000036  00800060  00000c14  00000ca8  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  2 .bss          0000000d  008000be  008000be  00000d06  2**0
+  2 .bss          0000000d  00800096  00800096  00000cde  2**0
                   ALLOC
-  3 .comment      00000030  00000000  00000000  00000d06  2**0
+  3 .comment      00000030  00000000  00000000  00000cde  2**0
                   CONTENTS, READONLY
-  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000d38  2**2
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000d10  2**2
                   CONTENTS, READONLY
-  5 .debug_aranges 00000290  00000000  00000000  00000d74  2**0
+  5 .debug_aranges 00000290  00000000  00000000  00000d4c  2**0
                   CONTENTS, READONLY, DEBUGGING
-  6 .debug_info   000022cf  00000000  00000000  00001004  2**0
+  6 .debug_info   00002190  00000000  00000000  00000fdc  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_abbrev 00000fec  00000000  00000000  000032d3  2**0
+  7 .debug_abbrev 00000fec  00000000  00000000  0000316c  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_line   00001559  00000000  00000000  000042bf  2**0
+  8 .debug_line   00001538  00000000  00000000  00004158  2**0
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_frame  00000470  00000000  00000000  00005818  2**2
+  9 .debug_frame  00000470  00000000  00000000  00005690  2**2
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_str    00000b7c  00000000  00000000  00005c88  2**0
+ 10 .debug_str    00000af0  00000000  00000000  00005b00  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_loc    00000d46  00000000  00000000  00006804  2**0
+ 11 .debug_loc    00000d46  00000000  00000000  000065f0  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_ranges 000001a8  00000000  00000000  0000754a  2**0
+ 12 .debug_ranges 000001a8  00000000  00000000  00007336  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -72,13 +72,13 @@ Disassembly of section .text:
   6a:	02 c0       	rjmp	.+4      	; 0x70 <__do_copy_data+0x10>
   6c:	05 90       	lpm	r0, Z+
   6e:	0d 92       	st	X+, r0
-  70:	ae 3b       	cpi	r26, 0xBE	; 190
+  70:	a6 39       	cpi	r26, 0x96	; 150
   72:	b1 07       	cpc	r27, r17
   74:	d9 f7       	brne	.-10     	; 0x6c <__do_copy_data+0xc>
 
 00000076 <__do_clear_bss>:
   76:	20 e0       	ldi	r18, 0x00	; 0
-  78:	ae eb       	ldi	r26, 0xBE	; 190
+  78:	a6 e9       	ldi	r26, 0x96	; 150
   7a:	b0 e0       	ldi	r27, 0x00	; 0
   7c:	01 c0       	rjmp	.+2      	; 0x80 <.do_clear_bss_start>
 
@@ -86,7 +86,7 @@ Disassembly of section .text:
   7e:	1d 92       	st	X+, r1
 
 00000080 <.do_clear_bss_start>:
-  80:	ab 3c       	cpi	r26, 0xCB	; 203
+  80:	a3 3a       	cpi	r26, 0xA3	; 163
   82:	b2 07       	cpc	r27, r18
   84:	e1 f7       	brne	.-8      	; 0x7e <.do_clear_bss_loop>
   86:	0e 94 cd 01 	call	0x39a	; 0x39a <main>
@@ -128,7 +128,7 @@ Mod_StateTyp Mod_GetCurrentMode (void)
 	*/
 	/* SHA3RAWY */
 	Gb_Motor = MOTOR_OFF;
-  98:	10 92 be 00 	sts	0x00BE, r1	; 0x8000be <__data_end>
+  98:	10 92 96 00 	sts	0x0096, r1	; 0x800096 <__data_end>
   9c:	08 95       	ret
 
 0000009e <Pos_Init>:
@@ -138,7 +138,7 @@ Mod_StateTyp Mod_GetCurrentMode (void)
 void Pos_Init (void)
 {
 	G_WindowPos = 0u;
-  9e:	10 92 bf 00 	sts	0x00BF, r1	; 0x8000bf <G_WindowPos>
+  9e:	10 92 97 00 	sts	0x0097, r1	; 0x800097 <G_WindowPos>
   a2:	08 95       	ret
 
 000000a4 <Pos_Cyclic>:
@@ -175,13 +175,13 @@ void Pos_Cyclic (void)
   cc:	41 f4       	brne	.+16     	; 0xde <Pos_Cyclic+0x3a>
 		{
 			if (100u != G_WindowPos)
-  ce:	80 91 bf 00 	lds	r24, 0x00BF	; 0x8000bf <G_WindowPos>
+  ce:	80 91 97 00 	lds	r24, 0x0097	; 0x800097 <G_WindowPos>
   d2:	84 36       	cpi	r24, 0x64	; 100
   d4:	69 f0       	breq	.+26     	; 0xf0 <Pos_Cyclic+0x4c>
 			{
 				G_WindowPos += POS_STEP;
   d6:	8b 5f       	subi	r24, 0xFB	; 251
-  d8:	80 93 bf 00 	sts	0x00BF, r24	; 0x8000bf <G_WindowPos>
+  d8:	80 93 97 00 	sts	0x0097, r24	; 0x800097 <G_WindowPos>
   dc:	09 c0       	rjmp	.+18     	; 0xf0 <Pos_Cyclic+0x4c>
 			}
 		} 
@@ -190,13 +190,13 @@ void Pos_Cyclic (void)
   e0:	39 f4       	brne	.+14     	; 0xf0 <Pos_Cyclic+0x4c>
 		{
 			if (0u != G_WindowPos)
-  e2:	80 91 bf 00 	lds	r24, 0x00BF	; 0x8000bf <G_WindowPos>
+  e2:	80 91 97 00 	lds	r24, 0x0097	; 0x800097 <G_WindowPos>
   e6:	88 23       	and	r24, r24
   e8:	19 f0       	breq	.+6      	; 0xf0 <Pos_Cyclic+0x4c>
 			{
 				G_WindowPos -= POS_STEP;
   ea:	85 50       	subi	r24, 0x05	; 5
-  ec:	80 93 bf 00 	sts	0x00BF, r24	; 0x8000bf <G_WindowPos>
+  ec:	80 93 97 00 	sts	0x0097, r24	; 0x800097 <G_WindowPos>
 			}
 		}
 	}
@@ -225,7 +225,7 @@ Std_RetTyp Led_ON(Led_LedIdTyp LedId)
 	if ((LedId >= LED_NUM_OF_LEDS) || (LedInitState != LED_INITALIZED))
   fc:	83 30       	cpi	r24, 0x03	; 3
   fe:	68 f5       	brcc	.+90     	; 0x15a <Led_ON+0x5e>
- 100:	90 91 60 00 	lds	r25, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 100:	90 91 60 00 	lds	r25, 0x0060	; 0x800060 <LedInitState>
  104:	91 11       	cpse	r25, r1
  106:	2b c0       	rjmp	.+86     	; 0x15e <Led_ON+0x62>
 	{
@@ -330,7 +330,7 @@ Std_RetTyp Led_OFF(Led_LedIdTyp LedId)
 	if ((LedId >= LED_NUM_OF_LEDS) || (LedInitState != LED_INITALIZED))
  166:	83 30       	cpi	r24, 0x03	; 3
  168:	68 f5       	brcc	.+90     	; 0x1c4 <Led_OFF+0x5e>
- 16a:	90 91 60 00 	lds	r25, 0x0060	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 16a:	90 91 60 00 	lds	r25, 0x0060	; 0x800060 <LedInitState>
  16e:	91 11       	cpse	r25, r1
  170:	2b c0       	rjmp	.+86     	; 0x1c8 <Led_OFF+0x62>
 	{
@@ -511,7 +511,7 @@ Std_RetTyp Led_Init(void)
  210:	02 c0       	rjmp	.+4      	; 0x216 <Led_Init+0x46>
 	{
 		LedInitState = LED_INITALIZED;
- 212:	10 92 60 00 	sts	0x0060, r1	; 0x800060 <__DATA_REGION_ORIGIN__>
+ 212:	10 92 60 00 	sts	0x0060, r1	; 0x800060 <LedInitState>
 	}
 	
 	return RetVal;
@@ -533,9 +533,9 @@ Std_RetTyp Sw_Init(void)
 {
  224:	ac e6       	ldi	r26, 0x6C	; 108
  226:	b0 e0       	ldi	r27, 0x00	; 0
- 228:	e3 ec       	ldi	r30, 0xC3	; 195
+ 228:	eb e9       	ldi	r30, 0x9B	; 155
  22a:	f0 e0       	ldi	r31, 0x00	; 0
- 22c:	26 ec       	ldi	r18, 0xC6	; 198
+ 22c:	2e e9       	ldi	r18, 0x9E	; 158
  22e:	30 e0       	ldi	r19, 0x00	; 0
 		{
 			SwValue[SwIdx] = STD_LOW ;
@@ -627,16 +627,16 @@ Std_RetTyp Sw_UpdateState_Cyclic(void)
  286:	f0 e0       	ldi	r31, 0x00	; 0
  288:	ff 2e       	mov	r15, r31
  28a:	f0 2d       	mov	r31, r0
- 28c:	00 ec       	ldi	r16, 0xC0	; 192
+ 28c:	08 e9       	ldi	r16, 0x98	; 152
  28e:	10 e0       	ldi	r17, 0x00	; 0
  290:	0f 2e       	mov	r0, r31
- 292:	f3 ec       	ldi	r31, 0xC3	; 195
+ 292:	fb e9       	ldi	r31, 0x9B	; 155
  294:	cf 2e       	mov	r12, r31
  296:	f0 e0       	ldi	r31, 0x00	; 0
  298:	df 2e       	mov	r13, r31
  29a:	f0 2d       	mov	r31, r0
  29c:	0f 2e       	mov	r0, r31
- 29e:	f3 ec       	ldi	r31, 0xC3	; 195
+ 29e:	fb e9       	ldi	r31, 0x9B	; 155
  2a0:	af 2e       	mov	r10, r31
  2a2:	f0 e0       	ldi	r31, 0x00	; 0
  2a4:	bf 2e       	mov	r11, r31
@@ -860,7 +860,7 @@ Std_RetTyp Sw_GetState (Sw_SwIdTyp SwId , boolean* SwState)
 		*SwState = SwValue[SwId];
  380:	e8 2f       	mov	r30, r24
  382:	f0 e0       	ldi	r31, 0x00	; 0
- 384:	ed 53       	subi	r30, 0x3D	; 61
+ 384:	e5 56       	subi	r30, 0x65	; 101
  386:	ff 4f       	sbci	r31, 0xFF	; 255
  388:	80 81       	ld	r24, Z
  38a:	fb 01       	movw	r30, r22
@@ -964,32 +964,32 @@ int main(void)
     {
 
 		if (u8IsTickCountersUpdated == STD_TRUE)
- 3d2:	80 91 ca 00 	lds	r24, 0x00CA	; 0x8000ca <u8IsTickCountersUpdated>
+ 3d2:	80 91 a2 00 	lds	r24, 0x00A2	; 0x8000a2 <u8IsTickCountersUpdated>
  3d6:	81 30       	cpi	r24, 0x01	; 1
  3d8:	e1 f7       	brne	.-8      	; 0x3d2 <main+0x38>
 		{
 			u8IsTickCountersUpdated = STD_FALSE;
- 3da:	10 92 ca 00 	sts	0x00CA, r1	; 0x8000ca <u8IsTickCountersUpdated>
+ 3da:	10 92 a2 00 	sts	0x00A2, r1	; 0x8000a2 <u8IsTickCountersUpdated>
 
 			if (u16Counter_500us % 1 == 0)
- 3de:	80 91 c6 00 	lds	r24, 0x00C6	; 0x8000c6 <u16Counter_500us>
- 3e2:	90 91 c7 00 	lds	r25, 0x00C7	; 0x8000c7 <u16Counter_500us+0x1>
+ 3de:	80 91 9e 00 	lds	r24, 0x009E	; 0x80009e <u16Counter_500us>
+ 3e2:	90 91 9f 00 	lds	r25, 0x009F	; 0x80009f <u16Counter_500us+0x1>
 			{
 				Task_500us();
  3e6:	0e 94 e7 05 	call	0xbce	; 0xbce <Task_500us>
 			}
 			
 			if (u16Counter_1ms % 1 == 0)
- 3ea:	80 91 c8 00 	lds	r24, 0x00C8	; 0x8000c8 <u16Counter_1ms>
- 3ee:	90 91 c9 00 	lds	r25, 0x00C9	; 0x8000c9 <u16Counter_1ms+0x1>
+ 3ea:	80 91 a0 00 	lds	r24, 0x00A0	; 0x8000a0 <u16Counter_1ms>
+ 3ee:	90 91 a1 00 	lds	r25, 0x00A1	; 0x8000a1 <u16Counter_1ms+0x1>
 			{
 				Task_1ms();
  3f2:	0e 94 e8 05 	call	0xbd0	; 0xbd0 <Task_1ms>
 			}
 			
 			if (u16Counter_1ms % 2 == 0)
- 3f6:	80 91 c8 00 	lds	r24, 0x00C8	; 0x8000c8 <u16Counter_1ms>
- 3fa:	90 91 c9 00 	lds	r25, 0x00C9	; 0x8000c9 <u16Counter_1ms+0x1>
+ 3f6:	80 91 a0 00 	lds	r24, 0x00A0	; 0x8000a0 <u16Counter_1ms>
+ 3fa:	90 91 a1 00 	lds	r25, 0x00A1	; 0x8000a1 <u16Counter_1ms+0x1>
  3fe:	80 ff       	sbrs	r24, 0
 			{
 				Task_2ms();
@@ -997,8 +997,8 @@ int main(void)
 			}
 			
 			if (u16Counter_1ms % 5 == 0)
- 404:	40 91 c8 00 	lds	r20, 0x00C8	; 0x8000c8 <u16Counter_1ms>
- 408:	50 91 c9 00 	lds	r21, 0x00C9	; 0x8000c9 <u16Counter_1ms+0x1>
+ 404:	40 91 a0 00 	lds	r20, 0x00A0	; 0x8000a0 <u16Counter_1ms>
+ 408:	50 91 a1 00 	lds	r21, 0x00A1	; 0x8000a1 <u16Counter_1ms+0x1>
  40c:	9a 01       	movw	r18, r20
  40e:	ad ec       	ldi	r26, 0xCD	; 205
  410:	bc ec       	ldi	r27, 0xCC	; 204
@@ -1023,8 +1023,8 @@ int main(void)
 			}
 
 			if (u16Counter_1ms % 10 == 0)
- 436:	40 91 c8 00 	lds	r20, 0x00C8	; 0x8000c8 <u16Counter_1ms>
- 43a:	50 91 c9 00 	lds	r21, 0x00C9	; 0x8000c9 <u16Counter_1ms+0x1>
+ 436:	40 91 a0 00 	lds	r20, 0x00A0	; 0x8000a0 <u16Counter_1ms>
+ 43a:	50 91 a1 00 	lds	r21, 0x00A1	; 0x8000a1 <u16Counter_1ms+0x1>
  43e:	9a 01       	movw	r18, r20
  440:	ad ec       	ldi	r26, 0xCD	; 205
  442:	bc ec       	ldi	r27, 0xCC	; 204
@@ -1055,8 +1055,8 @@ int main(void)
 			}
 			
 			if (u16Counter_1ms % 20 == 0)
- 474:	40 91 c8 00 	lds	r20, 0x00C8	; 0x8000c8 <u16Counter_1ms>
- 478:	50 91 c9 00 	lds	r21, 0x00C9	; 0x8000c9 <u16Counter_1ms+0x1>
+ 474:	40 91 a0 00 	lds	r20, 0x00A0	; 0x8000a0 <u16Counter_1ms>
+ 478:	50 91 a1 00 	lds	r21, 0x00A1	; 0x8000a1 <u16Counter_1ms+0x1>
  47c:	9a 01       	movw	r18, r20
  47e:	ad ec       	ldi	r26, 0xCD	; 205
  480:	bc ec       	ldi	r27, 0xCC	; 204
@@ -1081,8 +1081,8 @@ int main(void)
 			}
 			
 			if (u16Counter_1ms % 50 == 0)
- 4a6:	40 91 c8 00 	lds	r20, 0x00C8	; 0x8000c8 <u16Counter_1ms>
- 4aa:	50 91 c9 00 	lds	r21, 0x00C9	; 0x8000c9 <u16Counter_1ms+0x1>
+ 4a6:	40 91 a0 00 	lds	r20, 0x00A0	; 0x8000a0 <u16Counter_1ms>
+ 4aa:	50 91 a1 00 	lds	r21, 0x00A1	; 0x8000a1 <u16Counter_1ms+0x1>
  4ae:	9a 01       	movw	r18, r20
  4b0:	36 95       	lsr	r19
  4b2:	27 95       	ror	r18
@@ -1105,8 +1105,8 @@ int main(void)
 			}
 			
 			if (u16Counter_1ms % 100 == 0)
- 4d4:	40 91 c8 00 	lds	r20, 0x00C8	; 0x8000c8 <u16Counter_1ms>
- 4d8:	50 91 c9 00 	lds	r21, 0x00C9	; 0x8000c9 <u16Counter_1ms+0x1>
+ 4d4:	40 91 a0 00 	lds	r20, 0x00A0	; 0x8000a0 <u16Counter_1ms>
+ 4d8:	50 91 a1 00 	lds	r21, 0x00A1	; 0x8000a1 <u16Counter_1ms+0x1>
  4dc:	9a 01       	movw	r18, r20
  4de:	36 95       	lsr	r19
  4e0:	27 95       	ror	r18
@@ -1131,8 +1131,8 @@ int main(void)
 			}
 			
 			if (u16Counter_1ms % 200 == 0)
- 506:	40 91 c8 00 	lds	r20, 0x00C8	; 0x8000c8 <u16Counter_1ms>
- 50a:	50 91 c9 00 	lds	r21, 0x00C9	; 0x8000c9 <u16Counter_1ms+0x1>
+ 506:	40 91 a0 00 	lds	r20, 0x00A0	; 0x8000a0 <u16Counter_1ms>
+ 50a:	50 91 a1 00 	lds	r21, 0x00A1	; 0x8000a1 <u16Counter_1ms+0x1>
  50e:	9a 01       	movw	r18, r20
  510:	36 95       	lsr	r19
  512:	27 95       	ror	r18
@@ -1159,8 +1159,8 @@ int main(void)
 			}
 			
 			if (u16Counter_1ms % 500 == 0)
- 53c:	40 91 c8 00 	lds	r20, 0x00C8	; 0x8000c8 <u16Counter_1ms>
- 540:	50 91 c9 00 	lds	r21, 0x00C9	; 0x8000c9 <u16Counter_1ms+0x1>
+ 53c:	40 91 a0 00 	lds	r20, 0x00A0	; 0x8000a0 <u16Counter_1ms>
+ 540:	50 91 a1 00 	lds	r21, 0x00A1	; 0x8000a1 <u16Counter_1ms+0x1>
  544:	9a 01       	movw	r18, r20
  546:	36 95       	lsr	r19
  548:	27 95       	ror	r18
@@ -1191,8 +1191,8 @@ int main(void)
 			}
 			
 			if (u16Counter_1ms % 1000 == 0)
- 57a:	40 91 c8 00 	lds	r20, 0x00C8	; 0x8000c8 <u16Counter_1ms>
- 57e:	50 91 c9 00 	lds	r21, 0x00C9	; 0x8000c9 <u16Counter_1ms+0x1>
+ 57a:	40 91 a0 00 	lds	r20, 0x00A0	; 0x8000a0 <u16Counter_1ms>
+ 57e:	50 91 a1 00 	lds	r21, 0x00A1	; 0x8000a1 <u16Counter_1ms+0x1>
  582:	9a 01       	movw	r18, r20
  584:	36 95       	lsr	r19
  586:	27 95       	ror	r18
@@ -1225,8 +1225,8 @@ int main(void)
 			}
 			
 			if (u16Counter_1ms % 2000 == 0)
- 5bc:	40 91 c8 00 	lds	r20, 0x00C8	; 0x8000c8 <u16Counter_1ms>
- 5c0:	50 91 c9 00 	lds	r21, 0x00C9	; 0x8000c9 <u16Counter_1ms+0x1>
+ 5bc:	40 91 a0 00 	lds	r20, 0x00A0	; 0x8000a0 <u16Counter_1ms>
+ 5c0:	50 91 a1 00 	lds	r21, 0x00A1	; 0x8000a1 <u16Counter_1ms+0x1>
  5c4:	9a 01       	movw	r18, r20
  5c6:	32 95       	swap	r19
  5c8:	22 95       	swap	r18
@@ -1267,48 +1267,48 @@ void Timer0_500us_Cbk(void)
 {
 	u8IsTickCountersUpdated = STD_TRUE;
  602:	81 e0       	ldi	r24, 0x01	; 1
- 604:	80 93 ca 00 	sts	0x00CA, r24	; 0x8000ca <u8IsTickCountersUpdated>
+ 604:	80 93 a2 00 	sts	0x00A2, r24	; 0x8000a2 <u8IsTickCountersUpdated>
 	static boolean IsPeriod_1ms = STD_TRUE;
 	
 	IsPeriod_1ms = !IsPeriod_1ms;
- 608:	80 91 62 00 	lds	r24, 0x0062	; 0x800062 <IsPeriod_1ms.1983>
+ 608:	80 91 62 00 	lds	r24, 0x0062	; 0x800062 <IsPeriod_1ms.1950>
  60c:	91 e0       	ldi	r25, 0x01	; 1
  60e:	81 11       	cpse	r24, r1
  610:	90 e0       	ldi	r25, 0x00	; 0
- 612:	90 93 62 00 	sts	0x0062, r25	; 0x800062 <IsPeriod_1ms.1983>
+ 612:	90 93 62 00 	sts	0x0062, r25	; 0x800062 <IsPeriod_1ms.1950>
 
 	if (IsPeriod_1ms == STD_TRUE)
  616:	81 11       	cpse	r24, r1
  618:	14 c0       	rjmp	.+40     	; 0x642 <Timer0_500us_Cbk+0x40>
 	{
 		u16Counter_1ms++;
- 61a:	80 91 c8 00 	lds	r24, 0x00C8	; 0x8000c8 <u16Counter_1ms>
- 61e:	90 91 c9 00 	lds	r25, 0x00C9	; 0x8000c9 <u16Counter_1ms+0x1>
+ 61a:	80 91 a0 00 	lds	r24, 0x00A0	; 0x8000a0 <u16Counter_1ms>
+ 61e:	90 91 a1 00 	lds	r25, 0x00A1	; 0x8000a1 <u16Counter_1ms+0x1>
  622:	01 96       	adiw	r24, 0x01	; 1
- 624:	90 93 c9 00 	sts	0x00C9, r25	; 0x8000c9 <u16Counter_1ms+0x1>
- 628:	80 93 c8 00 	sts	0x00C8, r24	; 0x8000c8 <u16Counter_1ms>
+ 624:	90 93 a1 00 	sts	0x00A1, r25	; 0x8000a1 <u16Counter_1ms+0x1>
+ 628:	80 93 a0 00 	sts	0x00A0, r24	; 0x8000a0 <u16Counter_1ms>
 
 		if (u16Counter_1ms == 2000u)
- 62c:	80 91 c8 00 	lds	r24, 0x00C8	; 0x8000c8 <u16Counter_1ms>
- 630:	90 91 c9 00 	lds	r25, 0x00C9	; 0x8000c9 <u16Counter_1ms+0x1>
+ 62c:	80 91 a0 00 	lds	r24, 0x00A0	; 0x8000a0 <u16Counter_1ms>
+ 630:	90 91 a1 00 	lds	r25, 0x00A1	; 0x8000a1 <u16Counter_1ms+0x1>
  634:	80 3d       	cpi	r24, 0xD0	; 208
  636:	97 40       	sbci	r25, 0x07	; 7
  638:	21 f4       	brne	.+8      	; 0x642 <Timer0_500us_Cbk+0x40>
 		{
 			u16Counter_1ms = 0u;
- 63a:	10 92 c9 00 	sts	0x00C9, r1	; 0x8000c9 <u16Counter_1ms+0x1>
- 63e:	10 92 c8 00 	sts	0x00C8, r1	; 0x8000c8 <u16Counter_1ms>
+ 63a:	10 92 a1 00 	sts	0x00A1, r1	; 0x8000a1 <u16Counter_1ms+0x1>
+ 63e:	10 92 a0 00 	sts	0x00A0, r1	; 0x8000a0 <u16Counter_1ms>
 		}
 	}
 	
 	u16Counter_500us = (u16Counter_500us+1)%2;
- 642:	80 91 c6 00 	lds	r24, 0x00C6	; 0x8000c6 <u16Counter_500us>
- 646:	90 91 c7 00 	lds	r25, 0x00C7	; 0x8000c7 <u16Counter_500us+0x1>
+ 642:	80 91 9e 00 	lds	r24, 0x009E	; 0x80009e <u16Counter_500us>
+ 646:	90 91 9f 00 	lds	r25, 0x009F	; 0x80009f <u16Counter_500us+0x1>
  64a:	01 96       	adiw	r24, 0x01	; 1
  64c:	81 70       	andi	r24, 0x01	; 1
  64e:	99 27       	eor	r25, r25
- 650:	90 93 c7 00 	sts	0x00C7, r25	; 0x8000c7 <u16Counter_500us+0x1>
- 654:	80 93 c6 00 	sts	0x00C6, r24	; 0x8000c6 <u16Counter_500us>
+ 650:	90 93 9f 00 	sts	0x009F, r25	; 0x80009f <u16Counter_500us+0x1>
+ 654:	80 93 9e 00 	sts	0x009E, r24	; 0x80009e <u16Counter_500us>
  658:	08 95       	ret
 
 0000065a <Dio_SetDir>:
@@ -1853,7 +1853,7 @@ Std_RetTyp Dio_Init_Channel (Dio_ChannelIdTyp ChannelId)
 
 
     if (ChannelId >= NUM_OF_CHANNELS)
- 9de:	8f 30       	cpi	r24, 0x0F	; 15
+ 9de:	87 30       	cpi	r24, 0x07	; 7
  9e0:	00 f5       	brcc	.+64     	; 0xa22 <Dio_Init_Channel+0x4a>
  9e2:	c8 2f       	mov	r28, r24
     {
@@ -1955,7 +1955,7 @@ Std_RetTyp Dio_Init (void)
     
     for (CurrentId = 0 ; CurrentId < NUM_OF_CHANNELS ; CurrentId++)
  a44:	cf 5f       	subi	r28, 0xFF	; 255
- a46:	cf 30       	cpi	r28, 0x0F	; 15
+ a46:	c7 30       	cpi	r28, 0x07	; 7
  a48:	b9 f7       	brne	.-18     	; 0xa38 <Dio_Init+0xc>
         if (Dio_Init_Channel(CurrentId) == STD_NOT_OK) 
             retVal = STD_NOT_OK ;

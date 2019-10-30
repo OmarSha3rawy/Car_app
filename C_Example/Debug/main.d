@@ -46,16 +46,7 @@ main.d main.o: .././main.c .././main.h .././Tasks.h \
  .././HAL/Switch/Switch_Src/../../../MCAL/Dio/Dio_Src/Dio.h \
  .././HAL/Switch/Switch_Src/../Switch_Cfg/Switch_Cfg.h \
  .././HAL/Switch/Switch_Src/../Switch_Cfg/../../../MCAL/Dio/Dio_Src/Dio.h \
- .././HAL/Seg7/Seg7_Src/Seg7.h \
- .././HAL/Seg7/Seg7_Src/../../../Std_Headers/Controller.h \
- .././HAL/Seg7/Seg7_Src/../../../Std_Headers/Std_Types.h \
- .././HAL/Seg7/Seg7_Src/../../../Std_Headers/Std_Macros.h \
- .././HAL/Seg7/Seg7_Src/../../../Std_Headers/Kit.h \
- .././HAL/Seg7/Seg7_Src/../../../MCAL/Dio/Dio_Src/Dio.h \
- .././HAL/Seg7/Seg7_Src/../Seg7_Cfg/Seg7_Cfg.h \
- .././HAL/Seg7/Seg7_Src/../Seg7_Cfg/../../../Std_Headers/Std_Types.h \
- .././HAL/Seg7/Seg7_Src/../Seg7_Cfg/../Seg7_Src/Seg7.h .././APP/MOD/Mod.h \
- .././APP/MOD/../Motor/Motor.h \
+ .././APP/MOD/Mod.h .././APP/MOD/../Motor/Motor.h \
  .././APP/MOD/../Motor/../../Std_Headers/Std_Types.h \
  .././APP/MOD/../Motor/../../Std_Headers/Std_Macros.h \
  .././APP/MOD/../POS/Pos.h \
@@ -169,24 +160,6 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 .././HAL/Switch/Switch_Src/../Switch_Cfg/Switch_Cfg.h:
 
 .././HAL/Switch/Switch_Src/../Switch_Cfg/../../../MCAL/Dio/Dio_Src/Dio.h:
-
-.././HAL/Seg7/Seg7_Src/Seg7.h:
-
-.././HAL/Seg7/Seg7_Src/../../../Std_Headers/Controller.h:
-
-.././HAL/Seg7/Seg7_Src/../../../Std_Headers/Std_Types.h:
-
-.././HAL/Seg7/Seg7_Src/../../../Std_Headers/Std_Macros.h:
-
-.././HAL/Seg7/Seg7_Src/../../../Std_Headers/Kit.h:
-
-.././HAL/Seg7/Seg7_Src/../../../MCAL/Dio/Dio_Src/Dio.h:
-
-.././HAL/Seg7/Seg7_Src/../Seg7_Cfg/Seg7_Cfg.h:
-
-.././HAL/Seg7/Seg7_Src/../Seg7_Cfg/../../../Std_Headers/Std_Types.h:
-
-.././HAL/Seg7/Seg7_Src/../Seg7_Cfg/../Seg7_Src/Seg7.h:
 
 .././APP/MOD/Mod.h:
 

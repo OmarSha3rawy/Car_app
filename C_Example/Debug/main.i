@@ -616,14 +616,7 @@ typedef enum{
  DIO_LED_0,
  DIO_LED_1,
  DIO_LED_2,
- DIO_SEG7_En1,
- DIO_SEG7_En2,
- DIO_SEG7_DA,
- DIO_SEG7_DB,
- DIO_SEG7_DC,
- DIO_SEG7_DD,
- DIO_SEG7_DP,
- DIO_PWD_0,
+
  NUM_OF_CHANNELS
 }Dio_ChannelIdTyp;
 
@@ -744,52 +737,6 @@ Std_RetTyp Sw_GetStateOnce (Sw_SwIdTyp SwId , boolean* SwState);
 
 extern const Sw_SwTyp Sw_CfgArr [SW_NUM_OF_SW];
 # 21 ".././Tasks.h" 2
-# 1 ".././HAL/Seg7/Seg7_Src/Seg7.h" 1
-
-
-
-
-# 1 ".././HAL/Seg7/Seg7_Src/../../../Std_Headers/Controller.h" 1
-# 6 ".././HAL/Seg7/Seg7_Src/Seg7.h" 2
-# 1 ".././HAL/Seg7/Seg7_Src/../../../Std_Headers/Std_Types.h" 1
-# 7 ".././HAL/Seg7/Seg7_Src/Seg7.h" 2
-# 1 ".././HAL/Seg7/Seg7_Src/../../../Std_Headers/Std_Macros.h" 1
-# 8 ".././HAL/Seg7/Seg7_Src/Seg7.h" 2
-# 1 ".././HAL/Seg7/Seg7_Src/../../../Std_Headers/Kit.h" 1
-# 9 ".././HAL/Seg7/Seg7_Src/Seg7.h" 2
-# 1 ".././HAL/Seg7/Seg7_Src/../../../MCAL/Dio/Dio_Src/Dio.h" 1
-# 10 ".././HAL/Seg7/Seg7_Src/Seg7.h" 2
-# 1 ".././HAL/Seg7/Seg7_Src/../Seg7_Cfg/Seg7_Cfg.h" 1
-
-
-
-# 1 ".././HAL/Seg7/Seg7_Src/../Seg7_Cfg/../../../Std_Headers/Std_Types.h" 1
-# 5 ".././HAL/Seg7/Seg7_Src/../Seg7_Cfg/Seg7_Cfg.h" 2
-# 1 ".././HAL/Seg7/Seg7_Src/../Seg7_Cfg/../Seg7_Src/Seg7.h" 1
-# 6 ".././HAL/Seg7/Seg7_Src/../Seg7_Cfg/Seg7_Cfg.h" 2
-typedef struct
-{
- Dio_ChannelIdTyp EnablePinId;
- Dio_ChannelIdTyp Seg7AId;
- Dio_ChannelIdTyp Seg7BId;
- Dio_ChannelIdTyp Seg7CId;
- Dio_ChannelIdTyp Seg7DId;
- Dio_ChannelIdTyp Seg7DPId;
- uint8 InitValue;
-
-}Seg7_CfgTyp;
-# 11 ".././HAL/Seg7/Seg7_Src/Seg7.h" 2
-
-typedef enum { SEG7_DISPLAY0 , SEG7_DISPLAY1 , SEG7_NUM_OF_DIS }Seg7_IdTyp;
-
-extern const Seg7_CfgTyp Seg7_CfgArr[SEG7_NUM_OF_DIS] ;
-
-
-Std_RetTyp Seg7_Init(void);
-Std_RetTyp Seg7_UpdateDisplays(void);
-Std_RetTyp Seg7_WriteBuffer(Seg7_IdTyp Seg7Id, uint8 u8DisplayValue);
-Std_RetTyp Seg7_DpValue (Seg7_IdTyp Seg7Id, uint8 bDpState);
-# 22 ".././Tasks.h" 2
 # 1 ".././APP/MOD/Mod.h" 1
 # 12 ".././APP/MOD/Mod.h"
 # 1 ".././APP/MOD/../Motor/Motor.h" 1
@@ -860,14 +807,14 @@ typedef enum{
 extern void Mod_Init (void);
 extern void Mod_Cyclic (void);
 extern Mod_StateTyp Mod_GetCurrentMode (void);
-# 23 ".././Tasks.h" 2
+# 22 ".././Tasks.h" 2
 # 1 ".././APP/Motor/Motor.h" 1
-# 24 ".././Tasks.h" 2
+# 23 ".././Tasks.h" 2
 # 1 ".././APP/POS/Pos.h" 1
-# 25 ".././Tasks.h" 2
+# 24 ".././Tasks.h" 2
 # 1 ".././APP/WinBtn/WinBtn.h" 1
-# 26 ".././Tasks.h" 2
-# 40 ".././Tasks.h"
+# 25 ".././Tasks.h" 2
+# 39 ".././Tasks.h"
 extern uint16 Adc_Read(uint8 AdcChannel);
 
 extern void Task_500us(void);

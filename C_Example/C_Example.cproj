@@ -158,9 +158,6 @@
     <Compile Include="APP\WinBtn\WinBtn.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="HAL\LCD\lcd.h">
-      <SubType>compile</SubType>
-    </Compile>
     <Compile Include="HAL\Led\Led_Cfg\Led_Cfg.c">
       <SubType>compile</SubType>
     </Compile>
@@ -171,30 +168,6 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="HAL\Led\Led_Src\Led.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="HAL\PWD\PWD_Cfg\Pwd_Cfg.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="HAL\PWD\PWD_Cfg\Pwd_Cfg.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="HAL\PWD\PWD_Src\Pwd.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="HAL\PWD\PWD_Src\Pwd.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="HAL\Seg7\Seg7_Cfg\Seg7_Cfg.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="HAL\Seg7\Seg7_Cfg\Seg7_Cfg.h">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="HAL\Seg7\Seg7_Src\Seg7.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="HAL\Seg7\Seg7_Src\Seg7.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="HAL\Switch\Switch_Cfg\Switch_Cfg.c">
@@ -263,14 +236,7 @@
     <Folder Include="HAL\Led" />
     <Folder Include="HAL\Led\Led_Cfg" />
     <Folder Include="HAL\Led\Led_Src" />
-    <Folder Include="HAL\LCD" />
-    <Folder Include="HAL\PWD" />
-    <Folder Include="HAL\PWD\PWD_Src" />
-    <Folder Include="HAL\PWD\PWD_Cfg" />
     <Folder Include="HAL\Switch" />
-    <Folder Include="HAL\Seg7" />
-    <Folder Include="HAL\Seg7\Seg7_Cfg" />
-    <Folder Include="HAL\Seg7\Seg7_Src" />
     <Folder Include="HAL\Switch\Switch_Src" />
     <Folder Include="HAL\Switch\Switch_Cfg" />
     <Folder Include="MCAL" />

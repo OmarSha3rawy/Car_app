@@ -40,14 +40,7 @@ SUBDIRS :=  \
 ../HAL/Led \
 ../HAL/Led/Led_Cfg \
 ../HAL/Led/Led_Src \
-../HAL/LCD \
-../HAL/PWD \
-../HAL/PWD/PWD_Src \
-../HAL/PWD/PWD_Cfg \
 ../HAL/Switch \
-../HAL/Seg7 \
-../HAL/Seg7/Seg7_Cfg \
-../HAL/Seg7/Seg7_Src \
 ../HAL/Switch/Switch_Src \
 ../HAL/Switch/Switch_Cfg \
 ../MCAL \
@@ -70,10 +63,6 @@ C_SRCS +=  \
 ../APP/WinBtn/WinBtn.c \
 ../HAL/Led/Led_Cfg/Led_Cfg.c \
 ../HAL/Led/Led_Src/Led.c \
-../HAL/PWD/PWD_Cfg/Pwd_Cfg.c \
-../HAL/PWD/PWD_Src/Pwd.c \
-../HAL/Seg7/Seg7_Cfg/Seg7_Cfg.c \
-../HAL/Seg7/Seg7_Src/Seg7.c \
 ../HAL/Switch/Switch_Cfg/Switch_Cfg.c \
 ../HAL/Switch/Switch_Src/Switch.c \
 ../main.c \
@@ -96,10 +85,6 @@ APP/POS/Pos.o \
 APP/WinBtn/WinBtn.o \
 HAL/Led/Led_Cfg/Led_Cfg.o \
 HAL/Led/Led_Src/Led.o \
-HAL/PWD/PWD_Cfg/Pwd_Cfg.o \
-HAL/PWD/PWD_Src/Pwd.o \
-HAL/Seg7/Seg7_Cfg/Seg7_Cfg.o \
-HAL/Seg7/Seg7_Src/Seg7.o \
 HAL/Switch/Switch_Cfg/Switch_Cfg.o \
 HAL/Switch/Switch_Src/Switch.o \
 main.o \
@@ -115,10 +100,6 @@ APP/POS/Pos.o \
 APP/WinBtn/WinBtn.o \
 HAL/Led/Led_Cfg/Led_Cfg.o \
 HAL/Led/Led_Src/Led.o \
-HAL/PWD/PWD_Cfg/Pwd_Cfg.o \
-HAL/PWD/PWD_Src/Pwd.o \
-HAL/Seg7/Seg7_Cfg/Seg7_Cfg.o \
-HAL/Seg7/Seg7_Src/Seg7.o \
 HAL/Switch/Switch_Cfg/Switch_Cfg.o \
 HAL/Switch/Switch_Src/Switch.o \
 main.o \
@@ -134,10 +115,6 @@ APP/POS/Pos.d \
 APP/WinBtn/WinBtn.d \
 HAL/Led/Led_Cfg/Led_Cfg.d \
 HAL/Led/Led_Src/Led.d \
-HAL/PWD/PWD_Cfg/Pwd_Cfg.d \
-HAL/PWD/PWD_Src/Pwd.d \
-HAL/Seg7/Seg7_Cfg/Seg7_Cfg.d \
-HAL/Seg7/Seg7_Src/Seg7.d \
 HAL/Switch/Switch_Cfg/Switch_Cfg.d \
 HAL/Switch/Switch_Src/Switch.d \
 main.d \
@@ -153,10 +130,6 @@ APP/POS/Pos.d \
 APP/WinBtn/WinBtn.d \
 HAL/Led/Led_Cfg/Led_Cfg.d \
 HAL/Led/Led_Src/Led.d \
-HAL/PWD/PWD_Cfg/Pwd_Cfg.d \
-HAL/PWD/PWD_Src/Pwd.d \
-HAL/Seg7/Seg7_Cfg/Seg7_Cfg.d \
-HAL/Seg7/Seg7_Src/Seg7.d \
 HAL/Switch/Switch_Cfg/Switch_Cfg.d \
 HAL/Switch/Switch_Src/Switch.d \
 main.d \
@@ -215,34 +188,6 @@ HAL/Led/Led_Cfg/Led_Cfg.o: ../HAL/Led/Led_Cfg/Led_Cfg.c
 	
 
 HAL/Led/Led_Src/Led.o: ../HAL/Led/Led_Src/Led.c
-	@echo Building file: $<
-	@echo Invoking: AVR/GNU C Compiler : 5.4.0
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\include"  -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=atmega32 -c -std=gnu99 -save-temps -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
-	@echo Finished building: $<
-	
-
-HAL/PWD/PWD_Cfg/Pwd_Cfg.o: ../HAL/PWD/PWD_Cfg/Pwd_Cfg.c
-	@echo Building file: $<
-	@echo Invoking: AVR/GNU C Compiler : 5.4.0
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\include"  -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=atmega32 -c -std=gnu99 -save-temps -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
-	@echo Finished building: $<
-	
-
-HAL/PWD/PWD_Src/Pwd.o: ../HAL/PWD/PWD_Src/Pwd.c
-	@echo Building file: $<
-	@echo Invoking: AVR/GNU C Compiler : 5.4.0
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\include"  -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=atmega32 -c -std=gnu99 -save-temps -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
-	@echo Finished building: $<
-	
-
-HAL/Seg7/Seg7_Cfg/Seg7_Cfg.o: ../HAL/Seg7/Seg7_Cfg/Seg7_Cfg.c
-	@echo Building file: $<
-	@echo Invoking: AVR/GNU C Compiler : 5.4.0
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\include"  -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=atmega32 -c -std=gnu99 -save-temps -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
-	@echo Finished building: $<
-	
-
-HAL/Seg7/Seg7_Src/Seg7.o: ../HAL/Seg7/Seg7_Src/Seg7.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
 	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.209\include"  -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g2 -Wall -mmcu=atmega32 -c -std=gnu99 -save-temps -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 

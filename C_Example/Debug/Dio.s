@@ -623,7 +623,7 @@ Dio_Init_Channel:
 .L__stack_usage = 3
 .LVL35:
 	.loc 1 13 0
-	cpi r24,lo8(15)
+	cpi r24,lo8(7)
 	brsh .L23
 	mov r28,r24
 	.loc 1 19 0
@@ -724,7 +724,7 @@ Dio_Init:
 	.loc 1 53 0 discriminator 2
 	subi r28,lo8(-(1))
 .LVL47:
-	cpi r28,lo8(15)
+	cpi r28,lo8(7)
 	brne .L26
 	.loc 1 60 0
 	mov r24,r29
@@ -1378,15 +1378,15 @@ Dio_ToggleChannel:
 	.file 6 "../MCAL/Dio/Dio_Src/../Dio_Cfg/Dio_Cfg.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
-	.long	0x4de
+	.long	0x4ae
 	.word	0x2
 	.long	.Ldebug_abbrev0
 	.byte	0x4
 	.uleb128 0x1
-	.long	.LASF65
+	.long	.LASF57
 	.byte	0xc
-	.long	.LASF66
-	.long	.LASF67
+	.long	.LASF58
+	.long	.LASF59
 	.long	.Ldebug_ranges0+0
 	.long	0
 	.long	0
@@ -1540,7 +1540,7 @@ Dio_ToggleChannel:
 	.long	0x29
 	.byte	0x5
 	.byte	0xa
-	.long	0x1a8
+	.long	0x178
 	.uleb128 0x5
 	.long	.LASF26
 	.byte	0
@@ -1565,43 +1565,19 @@ Dio_ToggleChannel:
 	.uleb128 0x5
 	.long	.LASF33
 	.byte	0x7
-	.uleb128 0x5
-	.long	.LASF34
-	.byte	0x8
-	.uleb128 0x5
-	.long	.LASF35
-	.byte	0x9
-	.uleb128 0x5
-	.long	.LASF36
-	.byte	0xa
-	.uleb128 0x5
-	.long	.LASF37
-	.byte	0xb
-	.uleb128 0x5
-	.long	.LASF38
-	.byte	0xc
-	.uleb128 0x5
-	.long	.LASF39
-	.byte	0xd
-	.uleb128 0x5
-	.long	.LASF40
-	.byte	0xe
-	.uleb128 0x5
-	.long	.LASF41
-	.byte	0xf
 	.byte	0
 	.uleb128 0x3
-	.long	.LASF42
+	.long	.LASF34
 	.byte	0x5
-	.byte	0x1b
+	.byte	0x14
 	.long	0x13b
 	.uleb128 0x9
 	.byte	0x5
 	.byte	0x6
 	.byte	0xa
-	.long	0x202
+	.long	0x1d2
 	.uleb128 0xa
-	.long	.LASF43
+	.long	.LASF35
 	.byte	0x6
 	.byte	0xc
 	.long	0xe6
@@ -1609,7 +1585,7 @@ Dio_ToggleChannel:
 	.byte	0x23
 	.uleb128 0
 	.uleb128 0xa
-	.long	.LASF44
+	.long	.LASF36
 	.byte	0x6
 	.byte	0xd
 	.long	0x130
@@ -1617,7 +1593,7 @@ Dio_ToggleChannel:
 	.byte	0x23
 	.uleb128 0x1
 	.uleb128 0xa
-	.long	.LASF45
+	.long	.LASF37
 	.byte	0x6
 	.byte	0xe
 	.long	0x30
@@ -1625,7 +1601,7 @@ Dio_ToggleChannel:
 	.byte	0x23
 	.uleb128 0x2
 	.uleb128 0xa
-	.long	.LASF46
+	.long	.LASF38
 	.byte	0x6
 	.byte	0xf
 	.long	0x30
@@ -1633,7 +1609,7 @@ Dio_ToggleChannel:
 	.byte	0x23
 	.uleb128 0x3
 	.uleb128 0xa
-	.long	.LASF47
+	.long	.LASF39
 	.byte	0x6
 	.byte	0x10
 	.long	0x30
@@ -1642,13 +1618,13 @@ Dio_ToggleChannel:
 	.uleb128 0x4
 	.byte	0
 	.uleb128 0x3
-	.long	.LASF48
+	.long	.LASF40
 	.byte	0x6
 	.byte	0x11
-	.long	0x1b3
+	.long	0x183
 	.uleb128 0xb
 	.byte	0x1
-	.long	.LASF51
+	.long	.LASF43
 	.byte	0x1
 	.byte	0x3e
 	.byte	0x1
@@ -1660,21 +1636,21 @@ Dio_ToggleChannel:
 	.uleb128 0x20
 	.sleb128 2
 	.byte	0x1
-	.long	0x256
+	.long	0x226
 	.uleb128 0xc
-	.long	.LASF53
+	.long	.LASF45
 	.byte	0x1
 	.byte	0x3e
-	.long	0x1a8
+	.long	0x178
 	.long	.LLST0
 	.uleb128 0xd
-	.long	.LASF49
+	.long	.LASF41
 	.byte	0x1
 	.byte	0x40
-	.long	0x256
+	.long	0x226
 	.long	.LLST1
 	.uleb128 0xe
-	.long	.LASF50
+	.long	.LASF42
 	.byte	0x1
 	.byte	0x41
 	.long	0x85
@@ -1682,12 +1658,12 @@ Dio_ToggleChannel:
 	.byte	0
 	.uleb128 0xf
 	.byte	0x2
-	.long	0x25c
+	.long	0x22c
 	.uleb128 0x10
-	.long	0x202
+	.long	0x1d2
 	.uleb128 0xb
 	.byte	0x1
-	.long	.LASF52
+	.long	.LASF44
 	.byte	0x1
 	.byte	0x76
 	.byte	0x1
@@ -1699,28 +1675,28 @@ Dio_ToggleChannel:
 	.uleb128 0x20
 	.sleb128 2
 	.byte	0x1
-	.long	0x2b7
+	.long	0x287
 	.uleb128 0xc
-	.long	.LASF53
+	.long	.LASF45
 	.byte	0x1
 	.byte	0x76
-	.long	0x1a8
+	.long	0x178
 	.long	.LLST2
 	.uleb128 0x11
-	.long	.LASF54
+	.long	.LASF46
 	.byte	0x1
 	.byte	0x76
 	.long	0x30
 	.byte	0x1
 	.byte	0x66
 	.uleb128 0xd
-	.long	.LASF49
+	.long	.LASF41
 	.byte	0x1
 	.byte	0x78
-	.long	0x256
+	.long	0x226
 	.long	.LLST3
 	.uleb128 0xe
-	.long	.LASF50
+	.long	.LASF42
 	.byte	0x1
 	.byte	0x79
 	.long	0x85
@@ -1728,7 +1704,7 @@ Dio_ToggleChannel:
 	.byte	0
 	.uleb128 0x12
 	.byte	0x1
-	.long	.LASF55
+	.long	.LASF47
 	.byte	0x1
 	.byte	0x7
 	.byte	0x1
@@ -1737,29 +1713,29 @@ Dio_ToggleChannel:
 	.long	.LFE6
 	.long	.LLST4
 	.byte	0x1
-	.long	0x327
+	.long	0x2f7
 	.uleb128 0xc
-	.long	.LASF53
+	.long	.LASF45
 	.byte	0x1
 	.byte	0x7
-	.long	0x1a8
+	.long	0x178
 	.long	.LLST5
 	.uleb128 0xd
-	.long	.LASF56
+	.long	.LASF48
 	.byte	0x1
 	.byte	0x9
 	.long	0x85
 	.long	.LLST6
 	.uleb128 0xd
-	.long	.LASF49
+	.long	.LASF41
 	.byte	0x1
 	.byte	0xa
-	.long	0x256
+	.long	0x226
 	.long	.LLST7
 	.uleb128 0x13
 	.long	.LVL37
-	.long	0x20d
-	.long	0x316
+	.long	0x1dd
+	.long	0x2e6
 	.uleb128 0x14
 	.byte	0x1
 	.byte	0x68
@@ -1769,7 +1745,7 @@ Dio_ToggleChannel:
 	.byte	0
 	.uleb128 0x15
 	.long	.LVL40
-	.long	0x261
+	.long	0x231
 	.uleb128 0x14
 	.byte	0x1
 	.byte	0x68
@@ -1780,7 +1756,7 @@ Dio_ToggleChannel:
 	.byte	0
 	.uleb128 0x12
 	.byte	0x1
-	.long	.LASF57
+	.long	.LASF49
 	.byte	0x1
 	.byte	0x30
 	.byte	0x1
@@ -1789,22 +1765,22 @@ Dio_ToggleChannel:
 	.long	.LFE7
 	.long	.LLST8
 	.byte	0x1
-	.long	0x374
+	.long	0x344
 	.uleb128 0xd
-	.long	.LASF58
+	.long	.LASF50
 	.byte	0x1
 	.byte	0x32
-	.long	0x1a8
+	.long	0x178
 	.long	.LLST9
 	.uleb128 0xd
-	.long	.LASF56
+	.long	.LASF48
 	.byte	0x1
 	.byte	0x33
 	.long	0x85
 	.long	.LLST10
 	.uleb128 0x15
 	.long	.LVL45
-	.long	0x2b7
+	.long	0x287
 	.uleb128 0x14
 	.byte	0x1
 	.byte	0x68
@@ -1815,7 +1791,7 @@ Dio_ToggleChannel:
 	.byte	0
 	.uleb128 0xb
 	.byte	0x1
-	.long	.LASF59
+	.long	.LASF51
 	.byte	0x1
 	.byte	0xb0
 	.byte	0x1
@@ -1827,18 +1803,18 @@ Dio_ToggleChannel:
 	.uleb128 0x20
 	.sleb128 2
 	.byte	0x1
-	.long	0x3cf
+	.long	0x39f
 	.uleb128 0xc
-	.long	.LASF53
+	.long	.LASF45
 	.byte	0x1
 	.byte	0xb0
-	.long	0x1a8
+	.long	0x178
 	.long	.LLST11
 	.uleb128 0x11
-	.long	.LASF60
+	.long	.LASF52
 	.byte	0x1
 	.byte	0xb0
-	.long	0x3cf
+	.long	0x39f
 	.byte	0x6
 	.byte	0x66
 	.byte	0x93
@@ -1847,13 +1823,13 @@ Dio_ToggleChannel:
 	.byte	0x93
 	.uleb128 0x1
 	.uleb128 0xd
-	.long	.LASF49
+	.long	.LASF41
 	.byte	0x1
 	.byte	0xb2
-	.long	0x256
+	.long	0x226
 	.long	.LLST12
 	.uleb128 0xe
-	.long	.LASF50
+	.long	.LASF42
 	.byte	0x1
 	.byte	0xb3
 	.long	0x85
@@ -1864,7 +1840,7 @@ Dio_ToggleChannel:
 	.long	0x30
 	.uleb128 0xb
 	.byte	0x1
-	.long	.LASF61
+	.long	.LASF53
 	.byte	0x1
 	.byte	0xe6
 	.byte	0x1
@@ -1876,21 +1852,21 @@ Dio_ToggleChannel:
 	.uleb128 0x20
 	.sleb128 2
 	.byte	0x1
-	.long	0x41e
+	.long	0x3ee
 	.uleb128 0xc
-	.long	.LASF53
+	.long	.LASF45
 	.byte	0x1
 	.byte	0xe6
-	.long	0x1a8
+	.long	0x178
 	.long	.LLST13
 	.uleb128 0xd
-	.long	.LASF49
+	.long	.LASF41
 	.byte	0x1
 	.byte	0xe8
-	.long	0x256
+	.long	0x226
 	.long	.LLST14
 	.uleb128 0xe
-	.long	.LASF50
+	.long	.LASF42
 	.byte	0x1
 	.byte	0xe9
 	.long	0x85
@@ -1898,7 +1874,7 @@ Dio_ToggleChannel:
 	.byte	0
 	.uleb128 0x16
 	.byte	0x1
-	.long	.LASF62
+	.long	.LASF54
 	.byte	0x1
 	.word	0x11e
 	.byte	0x1
@@ -1910,21 +1886,21 @@ Dio_ToggleChannel:
 	.uleb128 0x20
 	.sleb128 2
 	.byte	0x1
-	.long	0x46b
+	.long	0x43b
 	.uleb128 0x17
-	.long	.LASF53
+	.long	.LASF45
 	.byte	0x1
 	.word	0x11e
-	.long	0x1a8
+	.long	0x178
 	.long	.LLST15
 	.uleb128 0x18
-	.long	.LASF49
+	.long	.LASF41
 	.byte	0x1
 	.word	0x120
-	.long	0x256
+	.long	0x226
 	.long	.LLST16
 	.uleb128 0x19
-	.long	.LASF50
+	.long	.LASF42
 	.byte	0x1
 	.word	0x121
 	.long	0x85
@@ -1932,7 +1908,7 @@ Dio_ToggleChannel:
 	.byte	0
 	.uleb128 0x16
 	.byte	0x1
-	.long	.LASF63
+	.long	.LASF55
 	.byte	0x1
 	.word	0x156
 	.byte	0x1
@@ -1944,46 +1920,46 @@ Dio_ToggleChannel:
 	.uleb128 0x20
 	.sleb128 2
 	.byte	0x1
-	.long	0x4b8
+	.long	0x488
 	.uleb128 0x17
-	.long	.LASF53
+	.long	.LASF45
 	.byte	0x1
 	.word	0x156
-	.long	0x1a8
+	.long	0x178
 	.long	.LLST17
 	.uleb128 0x18
-	.long	.LASF49
+	.long	.LASF41
 	.byte	0x1
 	.word	0x158
-	.long	0x256
+	.long	0x226
 	.long	.LLST18
 	.uleb128 0x19
-	.long	.LASF50
+	.long	.LASF42
 	.byte	0x1
 	.word	0x159
 	.long	0x85
 	.byte	0
 	.byte	0
 	.uleb128 0x1a
-	.long	0x25c
-	.long	0x4c8
+	.long	0x22c
+	.long	0x498
 	.uleb128 0x1b
-	.long	0x4c8
-	.byte	0xe
+	.long	0x498
+	.byte	0x6
 	.byte	0
 	.uleb128 0x2
 	.byte	0x2
 	.byte	0x7
-	.long	.LASF64
+	.long	.LASF56
 	.uleb128 0x1c
-	.long	.LASF68
+	.long	.LASF60
 	.byte	0x6
 	.byte	0x14
-	.long	0x4dc
+	.long	0x4ac
 	.byte	0x1
 	.byte	0x1
 	.uleb128 0x10
-	.long	0x4b8
+	.long	0x488
 	.byte	0
 	.section	.debug_abbrev,"",@progbits
 .Ldebug_abbrev0:
@@ -3005,57 +2981,51 @@ Dio_ToggleChannel:
 	.section	.debug_str,"MS",@progbits,1
 .LASF29:
 	.string	"DIO_TST_PIN"
-.LASF49:
+.LASF41:
 	.string	"CfgPtr"
-.LASF51:
+.LASF43:
 	.string	"Dio_SetDir"
-.LASF54:
+.LASF46:
 	.string	"u8Value"
 .LASF23:
 	.string	"Pins"
 .LASF3:
 	.string	"short int"
-.LASF50:
+.LASF42:
 	.string	"RetVal"
-.LASF61:
+.LASF53:
 	.string	"Dio_SetChannel"
-.LASF48:
+.LASF40:
 	.string	"Dio_ChannelCfgTyp"
-.LASF68:
-	.string	"Dio_CfgArr"
 .LASF60:
+	.string	"Dio_CfgArr"
+.LASF52:
 	.string	"u8pValuePtr"
-.LASF36:
-	.string	"DIO_SEG7_DB"
 .LASF8:
 	.string	"STD_OK"
 .LASF12:
 	.string	"uint8_t"
-.LASF57:
+.LASF49:
 	.string	"Dio_Init"
-.LASF42:
+.LASF34:
 	.string	"Dio_ChannelIdTyp"
-.LASF46:
+.LASF38:
 	.string	"isPullUp"
-.LASF47:
-	.string	"initVal"
-.LASF53:
-	.string	"ChannelId"
 .LASF39:
-	.string	"DIO_SEG7_DP"
+	.string	"initVal"
+.LASF45:
+	.string	"ChannelId"
 .LASF6:
 	.string	"float"
-.LASF34:
-	.string	"DIO_SEG7_En2"
 .LASF22:
 	.string	"Ports"
 .LASF14:
 	.string	"long long int"
-.LASF41:
+.LASF33:
 	.string	"NUM_OF_CHANNELS"
 .LASF5:
 	.string	"long int"
-.LASF66:
+.LASF58:
 	.string	"../MCAL/Dio/Dio_Src/Dio.c"
 .LASF26:
 	.string	"DIO_SW_0"
@@ -3063,17 +3033,11 @@ Dio_ToggleChannel:
 	.string	"unsigned char"
 .LASF1:
 	.string	"signed char"
-.LASF35:
-	.string	"DIO_SEG7_DA"
 .LASF15:
 	.string	"long long unsigned int"
-.LASF37:
-	.string	"DIO_SEG7_DC"
-.LASF38:
-	.string	"DIO_SEG7_DD"
 .LASF13:
 	.string	"unsigned int"
-.LASF43:
+.LASF35:
 	.string	"PinPort"
 .LASF30:
 	.string	"DIO_LED_0"
@@ -3085,7 +3049,7 @@ Dio_ToggleChannel:
 	.string	"Std_RetTyp"
 .LASF2:
 	.string	"short unsigned int"
-.LASF62:
+.LASF54:
 	.string	"Dio_ClearChannel"
 .LASF17:
 	.string	"PORT_B"
@@ -3093,21 +3057,19 @@ Dio_ToggleChannel:
 	.string	"PORT_C"
 .LASF19:
 	.string	"PORT_D"
-.LASF40:
-	.string	"DIO_PWD_0"
-.LASF33:
-	.string	"DIO_SEG7_En1"
+.LASF51:
+	.string	"Dio_Read"
 .LASF16:
 	.string	"PORT_A"
 .LASF21:
 	.string	"ePortsTyp"
-.LASF58:
+.LASF50:
 	.string	"CurrentId"
-.LASF45:
+.LASF37:
 	.string	"PinDir"
 .LASF20:
 	.string	"MAX_NUM_OF_PORTS"
-.LASF44:
+.LASF36:
 	.string	"PinNum"
 .LASF4:
 	.string	"long unsigned int"
@@ -3115,22 +3077,20 @@ Dio_ToggleChannel:
 	.string	"double"
 .LASF24:
 	.string	"MAX_NUM_OF_PINS"
-.LASF65:
+.LASF57:
 	.string	"GNU C99 5.4.0 -mn-flash=1 -mno-skip-bug -mmcu=avr5 -g2 -O1 -std=gnu99 -funsigned-char -funsigned-bitfields -ffunction-sections -fdata-sections -fpack-struct -fshort-enums"
 .LASF9:
 	.string	"STD_NOT_OK"
-.LASF64:
-	.string	"sizetype"
-.LASF63:
-	.string	"Dio_ToggleChannel"
-.LASF55:
-	.string	"Dio_Init_Channel"
 .LASF56:
+	.string	"sizetype"
+.LASF55:
+	.string	"Dio_ToggleChannel"
+.LASF47:
+	.string	"Dio_Init_Channel"
+.LASF48:
 	.string	"retVal"
-.LASF67:
-	.string	"X:\\\\VALEO_testing_academy\\\\challenge1\\\\C_ExampleTraineeVersion\\\\C_Example\\\\Debug"
 .LASF59:
-	.string	"Dio_Read"
+	.string	"X:\\\\VALEO_testing_academy\\\\challenge1\\\\C_ExampleTraineeVersion\\\\C_Example\\\\Debug"
 .LASF27:
 	.string	"DIO_SW_1"
 .LASF28:
@@ -3139,6 +3099,6 @@ Dio_ToggleChannel:
 	.string	"ePinsTyp"
 .LASF10:
 	.string	"boolean"
-.LASF52:
+.LASF44:
 	.string	"Dio_Write"
 	.ident	"GCC: (AVR_8_bit_GNU_Toolchain_3.6.2_1778) 5.4.0"

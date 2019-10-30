@@ -554,14 +554,7 @@ typedef enum{
  DIO_LED_0,
  DIO_LED_1,
  DIO_LED_2,
- DIO_SEG7_En1,
- DIO_SEG7_En2,
- DIO_SEG7_DA,
- DIO_SEG7_DB,
- DIO_SEG7_DC,
- DIO_SEG7_DD,
- DIO_SEG7_DP,
- DIO_PWD_0,
+
  NUM_OF_CHANNELS
 }Dio_ChannelIdTyp;
 
@@ -662,67 +655,4 @@ const Dio_ChannelCfgTyp Dio_CfgArr [NUM_OF_CHANNELS] =
   (0u)
     },
 
- {
-  PORT_C,
-  P2,
-  (1u),
-  (2u),
-  (0u)
- },
-
- {
-  PORT_C,
-  P3,
-  (1u),
-  (2u),
-  (0u)
- },
-
- {
-  PORT_C,
-  P4,
-  (1u),
-  (2u),
-  (0u)
- },
-
- {
-  PORT_C,
-  P5,
-  (1u),
-  (2u),
-  (0u)
- },
-
- {
-  PORT_C,
-  P6,
-  (1u),
-  (2u),
-  (0u)
- },
-
- {
-  PORT_C,
-  P7,
-  (1u),
-  (2u),
-  (0u)
- },
-
- {
-  PORT_B,
-  P0,
-  (1u),
-  (2u),
-  (0u)
- },
-
- {
-  PORT_B,
-  P7,
-  (0u),
-  (0u),
-  (2u)
- }
 };

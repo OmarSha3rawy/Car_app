@@ -523,7 +523,7 @@ Task_2000ms:
 	.long	.LASF24
 	.long	.LASF24
 	.byte	0x2
-	.byte	0x21
+	.byte	0x1a
 	.uleb128 0x7
 	.byte	0x1
 	.byte	0x1
@@ -784,80 +784,80 @@ Task_2000ms:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
+.LASF25:
+	.string	"Led_Init"
+.LASF34:
+	.string	"Mod_Cyclic"
+.LASF11:
+	.string	"Task_500us"
+.LASF3:
+	.string	"short int"
+.LASF28:
+	.string	"Pos_Init"
 .LASF15:
 	.string	"Task_Init"
-.LASF22:
-	.string	"Task_1000ms"
+.LASF16:
+	.string	"Task_10ms"
+.LASF30:
+	.string	"Mod_Init"
+.LASF18:
+	.string	"Task_50ms"
 .LASF24:
 	.string	"Dio_Init"
-.LASF17:
-	.string	"Task_20ms"
-.LASF2:
-	.string	"short unsigned int"
-.LASF12:
-	.string	"Task_1ms"
-.LASF8:
-	.string	"unsigned int"
 .LASF6:
 	.string	"float"
-.LASF26:
-	.string	"Sw_Init"
-.LASF21:
-	.string	"Task_500ms"
+.LASF9:
+	.string	"long long int"
+.LASF5:
+	.string	"long int"
+.LASF23:
+	.string	"Task_2000ms"
+.LASF17:
+	.string	"Task_20ms"
+.LASF14:
+	.string	"Task_5ms"
+.LASF36:
+	.string	".././Tasks.c"
 .LASF0:
 	.string	"unsigned char"
 .LASF19:
 	.string	"Task_100ms"
-.LASF35:
-	.string	"GNU C99 5.4.0 -mn-flash=1 -mno-skip-bug -mmcu=avr5 -g2 -O1 -std=gnu99 -funsigned-char -funsigned-bitfields -ffunction-sections -fdata-sections -fpack-struct -fshort-enums"
+.LASF1:
+	.string	"signed char"
+.LASF10:
+	.string	"long long unsigned int"
+.LASF8:
+	.string	"unsigned int"
+.LASF12:
+	.string	"Task_1ms"
+.LASF2:
+	.string	"short unsigned int"
+.LASF31:
+	.string	"T0_Timer0_Init"
+.LASF32:
+	.string	"Sw_UpdateState_Cyclic"
+.LASF26:
+	.string	"Sw_Init"
+.LASF27:
+	.string	"WinBtn_Init"
 .LASF4:
 	.string	"long unsigned int"
-.LASF33:
-	.string	"Pos_Cyclic"
-.LASF18:
-	.string	"Task_50ms"
-.LASF23:
-	.string	"Task_2000ms"
-.LASF30:
-	.string	"Mod_Init"
 .LASF7:
 	.string	"double"
 .LASF13:
 	.string	"Task_2ms"
-.LASF11:
-	.string	"Task_500us"
-.LASF31:
-	.string	"T0_Timer0_Init"
-.LASF16:
-	.string	"Task_10ms"
-.LASF14:
-	.string	"Task_5ms"
-.LASF32:
-	.string	"Sw_UpdateState_Cyclic"
+.LASF35:
+	.string	"GNU C99 5.4.0 -mn-flash=1 -mno-skip-bug -mmcu=avr5 -g2 -O1 -std=gnu99 -funsigned-char -funsigned-bitfields -ffunction-sections -fdata-sections -fpack-struct -fshort-enums"
 .LASF20:
 	.string	"Task_200ms"
+.LASF22:
+	.string	"Task_1000ms"
 .LASF37:
 	.string	"X:\\\\VALEO_testing_academy\\\\challenge1\\\\C_ExampleTraineeVersion\\\\C_Example\\\\Debug"
-.LASF10:
-	.string	"long long unsigned int"
-.LASF28:
-	.string	"Pos_Init"
-.LASF36:
-	.string	".././Tasks.c"
-.LASF34:
-	.string	"Mod_Cyclic"
-.LASF9:
-	.string	"long long int"
+.LASF21:
+	.string	"Task_500ms"
 .LASF29:
 	.string	"Motor_Init"
-.LASF3:
-	.string	"short int"
-.LASF25:
-	.string	"Led_Init"
-.LASF5:
-	.string	"long int"
-.LASF1:
-	.string	"signed char"
-.LASF27:
-	.string	"WinBtn_Init"
+.LASF33:
+	.string	"Pos_Cyclic"
 	.ident	"GCC: (AVR_8_bit_GNU_Toolchain_3.6.2_1778) 5.4.0"

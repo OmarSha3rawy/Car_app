@@ -354,15 +354,15 @@ LedInitState:
 	.file 5 "../HAL/Led/Led_Src/Led.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
-	.long	0x3a1
+	.long	0x371
 	.word	0x2
 	.long	.Ldebug_abbrev0
 	.byte	0x4
 	.uleb128 0x1
-	.long	.LASF58
+	.long	.LASF50
 	.byte	0xc
-	.long	.LASF59
-	.long	.LASF60
+	.long	.LASF51
+	.long	.LASF52
 	.long	.Ldebug_ranges0+0
 	.long	0
 	.long	0
@@ -448,7 +448,7 @@ LedInitState:
 	.long	0x34
 	.byte	0x3
 	.byte	0xa
-	.long	0x124
+	.long	0xf4
 	.uleb128 0x5
 	.long	.LASF16
 	.byte	0
@@ -473,51 +473,27 @@ LedInitState:
 	.uleb128 0x5
 	.long	.LASF23
 	.byte	0x7
-	.uleb128 0x5
-	.long	.LASF24
-	.byte	0x8
-	.uleb128 0x5
-	.long	.LASF25
-	.byte	0x9
-	.uleb128 0x5
-	.long	.LASF26
-	.byte	0xa
-	.uleb128 0x5
-	.long	.LASF27
-	.byte	0xb
-	.uleb128 0x5
-	.long	.LASF28
-	.byte	0xc
-	.uleb128 0x5
-	.long	.LASF29
-	.byte	0xd
-	.uleb128 0x5
-	.long	.LASF30
-	.byte	0xe
-	.uleb128 0x5
-	.long	.LASF31
-	.byte	0xf
 	.byte	0
 	.uleb128 0x2
-	.long	.LASF32
+	.long	.LASF24
 	.byte	0x3
-	.byte	0x1b
+	.byte	0x14
 	.long	0xb7
 	.uleb128 0x7
 	.byte	0x3
 	.byte	0x4
 	.byte	0x13
-	.long	0x162
+	.long	0x132
 	.uleb128 0x8
-	.long	.LASF33
+	.long	.LASF25
 	.byte	0x4
 	.byte	0x15
-	.long	0x124
+	.long	0xf4
 	.byte	0x2
 	.byte	0x23
 	.uleb128 0
 	.uleb128 0x8
-	.long	.LASF34
+	.long	.LASF26
 	.byte	0x4
 	.byte	0x16
 	.long	0x3b
@@ -525,7 +501,7 @@ LedInitState:
 	.byte	0x23
 	.uleb128 0x1
 	.uleb128 0x8
-	.long	.LASF35
+	.long	.LASF27
 	.byte	0x4
 	.byte	0x17
 	.long	0x3b
@@ -534,55 +510,55 @@ LedInitState:
 	.uleb128 0x2
 	.byte	0
 	.uleb128 0x2
-	.long	.LASF36
+	.long	.LASF28
 	.byte	0x4
 	.byte	0x18
-	.long	0x12f
+	.long	0xff
 	.uleb128 0x4
 	.byte	0x1
 	.long	0x34
 	.byte	0x5
 	.byte	0x16
-	.long	0x192
+	.long	0x162
 	.uleb128 0x5
-	.long	.LASF37
+	.long	.LASF29
 	.byte	0
 	.uleb128 0x5
-	.long	.LASF38
+	.long	.LASF30
 	.byte	0x1
 	.uleb128 0x5
-	.long	.LASF39
+	.long	.LASF31
 	.byte	0x2
 	.uleb128 0x5
-	.long	.LASF40
+	.long	.LASF32
 	.byte	0x3
 	.byte	0
 	.uleb128 0x2
-	.long	.LASF41
+	.long	.LASF33
 	.byte	0x5
 	.byte	0x16
-	.long	0x16d
+	.long	0x13d
 	.uleb128 0x4
 	.byte	0x1
 	.long	0x34
 	.byte	0x5
 	.byte	0x17
-	.long	0x1b6
+	.long	0x186
 	.uleb128 0x5
-	.long	.LASF42
+	.long	.LASF34
 	.byte	0
 	.uleb128 0x5
-	.long	.LASF43
+	.long	.LASF35
 	.byte	0x1
 	.byte	0
 	.uleb128 0x2
-	.long	.LASF44
+	.long	.LASF36
 	.byte	0x5
 	.byte	0x17
-	.long	0x19d
+	.long	0x16d
 	.uleb128 0x9
 	.byte	0x1
-	.long	.LASF47
+	.long	.LASF39
 	.byte	0x1
 	.byte	0x2b
 	.byte	0x1
@@ -594,29 +570,29 @@ LedInitState:
 	.uleb128 0x20
 	.sleb128 2
 	.byte	0x1
-	.long	0x22f
+	.long	0x1ff
 	.uleb128 0xa
-	.long	.LASF49
+	.long	.LASF41
 	.byte	0x1
 	.byte	0x2b
-	.long	0x192
+	.long	0x162
 	.long	.LLST0
 	.uleb128 0xb
-	.long	.LASF45
+	.long	.LASF37
 	.byte	0x1
 	.byte	0x2d
 	.long	0x90
 	.long	.LLST1
 	.uleb128 0xb
-	.long	.LASF46
+	.long	.LASF38
 	.byte	0x1
 	.byte	0x2e
-	.long	0x22f
+	.long	0x1ff
 	.long	.LLST2
 	.uleb128 0xc
 	.long	.LVL3
-	.long	0x38a
-	.long	0x21f
+	.long	0x35a
+	.long	0x1ef
 	.uleb128 0xd
 	.byte	0x1
 	.byte	0x66
@@ -625,7 +601,7 @@ LedInitState:
 	.byte	0
 	.uleb128 0xe
 	.long	.LVL6
-	.long	0x38a
+	.long	0x35a
 	.uleb128 0xd
 	.byte	0x1
 	.byte	0x66
@@ -635,12 +611,12 @@ LedInitState:
 	.byte	0
 	.uleb128 0xf
 	.byte	0x2
-	.long	0x235
+	.long	0x205
 	.uleb128 0x10
-	.long	0x162
+	.long	0x132
 	.uleb128 0x9
 	.byte	0x1
-	.long	.LASF48
+	.long	.LASF40
 	.byte	0x1
 	.byte	0x4a
 	.byte	0x1
@@ -652,29 +628,29 @@ LedInitState:
 	.uleb128 0x20
 	.sleb128 2
 	.byte	0x1
-	.long	0x2a8
+	.long	0x278
 	.uleb128 0xa
-	.long	.LASF49
+	.long	.LASF41
 	.byte	0x1
 	.byte	0x4a
-	.long	0x192
+	.long	0x162
 	.long	.LLST3
 	.uleb128 0xb
-	.long	.LASF45
+	.long	.LASF37
 	.byte	0x1
 	.byte	0x4c
 	.long	0x90
 	.long	.LLST4
 	.uleb128 0xb
-	.long	.LASF46
+	.long	.LASF38
 	.byte	0x1
 	.byte	0x4d
-	.long	0x22f
+	.long	0x1ff
 	.long	.LLST5
 	.uleb128 0xc
 	.long	.LVL16
-	.long	0x38a
-	.long	0x298
+	.long	0x35a
+	.long	0x268
 	.uleb128 0xd
 	.byte	0x1
 	.byte	0x66
@@ -683,7 +659,7 @@ LedInitState:
 	.byte	0
 	.uleb128 0xe
 	.long	.LVL19
-	.long	0x38a
+	.long	0x35a
 	.uleb128 0xd
 	.byte	0x1
 	.byte	0x66
@@ -693,7 +669,7 @@ LedInitState:
 	.byte	0
 	.uleb128 0x11
 	.byte	0x1
-	.long	.LASF50
+	.long	.LASF42
 	.byte	0x1
 	.byte	0xc
 	.byte	0x1
@@ -702,23 +678,23 @@ LedInitState:
 	.long	.LFE6
 	.long	.LLST6
 	.byte	0x1
-	.long	0x309
+	.long	0x2d9
 	.uleb128 0xb
-	.long	.LASF45
+	.long	.LASF37
 	.byte	0x1
 	.byte	0xe
 	.long	0x90
 	.long	.LLST7
 	.uleb128 0xb
-	.long	.LASF51
+	.long	.LASF43
 	.byte	0x1
 	.byte	0xf
 	.long	0x29
 	.long	.LLST8
 	.uleb128 0xc
 	.long	.LVL28
-	.long	0x1c1
-	.long	0x2f8
+	.long	0x191
+	.long	0x2c8
 	.uleb128 0xd
 	.byte	0x1
 	.byte	0x68
@@ -728,7 +704,7 @@ LedInitState:
 	.byte	0
 	.uleb128 0xe
 	.long	.LVL29
-	.long	0x23a
+	.long	0x20a
 	.uleb128 0xd
 	.byte	0x1
 	.byte	0x68
@@ -739,7 +715,7 @@ LedInitState:
 	.byte	0
 	.uleb128 0x9
 	.byte	0x1
-	.long	.LASF52
+	.long	.LASF44
 	.byte	0x1
 	.byte	0x68
 	.byte	0x1
@@ -751,48 +727,48 @@ LedInitState:
 	.uleb128 0x20
 	.sleb128 2
 	.byte	0x1
-	.long	0x34f
+	.long	0x31f
 	.uleb128 0xa
-	.long	.LASF49
+	.long	.LASF41
 	.byte	0x1
 	.byte	0x68
-	.long	0x192
+	.long	0x162
 	.long	.LLST9
 	.uleb128 0xb
-	.long	.LASF45
+	.long	.LASF37
 	.byte	0x1
 	.byte	0x6a
 	.long	0x90
 	.long	.LLST10
 	.uleb128 0x12
 	.long	.LVL36
-	.long	0x397
+	.long	0x367
 	.byte	0
 	.uleb128 0x13
-	.long	0x235
-	.long	0x35f
+	.long	0x205
+	.long	0x32f
 	.uleb128 0x14
-	.long	0x35f
+	.long	0x32f
 	.byte	0x2
 	.byte	0
 	.uleb128 0x3
 	.byte	0x2
 	.byte	0x7
-	.long	.LASF53
+	.long	.LASF45
 	.uleb128 0x15
-	.long	.LASF54
+	.long	.LASF46
 	.byte	0x5
 	.byte	0x1e
-	.long	0x373
+	.long	0x343
 	.byte	0x1
 	.byte	0x1
 	.uleb128 0x10
-	.long	0x34f
+	.long	0x31f
 	.uleb128 0x16
-	.long	.LASF55
+	.long	.LASF47
 	.byte	0x1
 	.byte	0xa
-	.long	0x1b6
+	.long	0x186
 	.byte	0x1
 	.byte	0x5
 	.byte	0x3
@@ -800,17 +776,17 @@ LedInitState:
 	.uleb128 0x17
 	.byte	0x1
 	.byte	0x1
-	.long	.LASF56
-	.long	.LASF56
+	.long	.LASF48
+	.long	.LASF48
 	.byte	0x3
-	.byte	0x1f
+	.byte	0x18
 	.uleb128 0x17
 	.byte	0x1
 	.byte	0x1
-	.long	.LASF57
-	.long	.LASF57
+	.long	.LASF49
+	.long	.LASF49
 	.byte	0x3
-	.byte	0x25
+	.byte	0x1e
 	.byte	0
 	.section	.debug_abbrev,"",@progbits
 .Ldebug_abbrev0:
@@ -1448,47 +1424,43 @@ LedInitState:
 	.section	.debug_str,"MS",@progbits,1
 .LASF19:
 	.string	"DIO_TST_PIN"
-.LASF46:
+.LASF38:
 	.string	"CfgPtr"
-.LASF47:
+.LASF39:
 	.string	"Led_ON"
 .LASF5:
 	.string	"short int"
-.LASF45:
+.LASF37:
 	.string	"RetVal"
-.LASF53:
+.LASF45:
 	.string	"sizetype"
-.LASF39:
+.LASF31:
 	.string	"LED_LED2"
-.LASF52:
+.LASF44:
 	.string	"Led_Toggle"
-.LASF50:
+.LASF42:
 	.string	"Led_Init"
-.LASF49:
+.LASF41:
 	.string	"LedId"
-.LASF26:
-	.string	"DIO_SEG7_DB"
-.LASF55:
+.LASF47:
 	.string	"LedInitState"
 .LASF10:
 	.string	"STD_OK"
 .LASF0:
 	.string	"uint8"
-.LASF32:
+.LASF24:
 	.string	"Dio_ChannelIdTyp"
-.LASF42:
+.LASF34:
 	.string	"LED_INITALIZED"
-.LASF29:
-	.string	"DIO_SEG7_DP"
 .LASF8:
 	.string	"float"
-.LASF36:
+.LASF28:
 	.string	"Led_CfgTyp"
 .LASF14:
 	.string	"long long int"
-.LASF31:
+.LASF23:
 	.string	"NUM_OF_CHANNELS"
-.LASF51:
+.LASF43:
 	.string	"LedIdx"
 .LASF7:
 	.string	"long int"
@@ -1500,21 +1472,15 @@ LedInitState:
 	.string	"DIO_SW_2"
 .LASF2:
 	.string	"unsigned char"
-.LASF34:
+.LASF26:
 	.string	"ActiveState"
 .LASF3:
 	.string	"signed char"
-.LASF25:
-	.string	"DIO_SEG7_DA"
 .LASF15:
 	.string	"long long unsigned int"
-.LASF27:
-	.string	"DIO_SEG7_DC"
-.LASF28:
-	.string	"DIO_SEG7_DD"
 .LASF13:
 	.string	"unsigned int"
-.LASF48:
+.LASF40:
 	.string	"Led_OFF"
 .LASF20:
 	.string	"DIO_LED_0"
@@ -1526,47 +1492,41 @@ LedInitState:
 	.string	"Std_RetTyp"
 .LASF4:
 	.string	"short unsigned int"
-.LASF35:
+.LASF27:
 	.string	"InitVal"
-.LASF30:
-	.string	"DIO_PWD_0"
-.LASF54:
+.LASF46:
 	.string	"Led_CfgArr"
-.LASF23:
-	.string	"DIO_SEG7_En1"
-.LASF24:
-	.string	"DIO_SEG7_En2"
-.LASF37:
+.LASF29:
 	.string	"LED_MOTOR_UP"
-.LASF59:
+.LASF51:
 	.string	"../HAL/Led/Led_Src/Led.c"
 .LASF6:
 	.string	"long unsigned int"
 .LASF9:
 	.string	"double"
-.LASF58:
+.LASF50:
 	.string	"GNU C99 5.4.0 -mn-flash=1 -mno-skip-bug -mmcu=avr5 -g2 -O1 -std=gnu99 -funsigned-char -funsigned-bitfields -ffunction-sections -fdata-sections -fpack-struct -fshort-enums"
-.LASF43:
+.LASF35:
 	.string	"LED_UNINITIALIZED"
 .LASF11:
 	.string	"STD_NOT_OK"
-.LASF44:
+.LASF36:
 	.string	"Led_InitTyp"
-.LASF57:
+.LASF49:
 	.string	"Dio_ToggleChannel"
-.LASF38:
+.LASF30:
 	.string	"LED_MOTOR_DOWN"
-.LASF60:
+.LASF52:
 	.string	"X:\\\\VALEO_testing_academy\\\\challenge1\\\\C_ExampleTraineeVersion\\\\C_Example\\\\Debug"
-.LASF40:
+.LASF32:
 	.string	"LED_NUM_OF_LEDS"
-.LASF33:
+.LASF25:
 	.string	"LedChannelId"
 .LASF1:
 	.string	"boolean"
-.LASF41:
+.LASF33:
 	.string	"Led_LedIdTyp"
-.LASF56:
+.LASF48:
 	.string	"Dio_Write"
 	.ident	"GCC: (AVR_8_bit_GNU_Toolchain_3.6.2_1778) 5.4.0"
 .global __do_copy_data

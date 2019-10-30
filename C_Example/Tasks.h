@@ -18,7 +18,6 @@
 #include "MCAL/Timer0/Timer0_Src/Timer0.h"
 #include "HAL/Led/Led_Src/Led.h"
 #include "HAL/Switch/Switch_Src/Switch.h"
-#include "HAL/Seg7/Seg7_Src/Seg7.h"
 #include "APP/MOD/Mod.h"
 #include "APP/Motor/Motor.h"
 #include "APP/POS/Pos.h"

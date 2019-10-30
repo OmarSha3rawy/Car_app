@@ -27,22 +27,22 @@ Sw_CfgArr:
 	.file 5 "../HAL/Switch/Switch_Cfg/Switch_Cfg.c"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
-	.long	0x179
+	.long	0x149
 	.word	0x2
 	.long	.Ldebug_abbrev0
 	.byte	0x4
 	.uleb128 0x1
-	.long	.LASF37
+	.long	.LASF29
 	.byte	0xc
-	.long	.LASF38
-	.long	.LASF39
+	.long	.LASF30
+	.long	.LASF31
 	.long	.Ldebug_line0
 	.uleb128 0x2
 	.byte	0x1
 	.byte	0x8
 	.long	.LASF0
 	.uleb128 0x3
-	.long	.LASF27
+	.long	.LASF19
 	.byte	0x1
 	.byte	0x6
 	.long	0x1d
@@ -95,7 +95,7 @@ Sw_CfgArr:
 	.long	0x1d
 	.byte	0x2
 	.byte	0xa
-	.long	0xe9
+	.long	0xb9
 	.uleb128 0x6
 	.long	.LASF11
 	.byte	0
@@ -120,51 +120,27 @@ Sw_CfgArr:
 	.uleb128 0x6
 	.long	.LASF18
 	.byte	0x7
-	.uleb128 0x6
-	.long	.LASF19
-	.byte	0x8
-	.uleb128 0x6
-	.long	.LASF20
-	.byte	0x9
-	.uleb128 0x6
-	.long	.LASF21
-	.byte	0xa
-	.uleb128 0x6
-	.long	.LASF22
-	.byte	0xb
-	.uleb128 0x6
-	.long	.LASF23
-	.byte	0xc
-	.uleb128 0x6
-	.long	.LASF24
-	.byte	0xd
-	.uleb128 0x6
-	.long	.LASF25
-	.byte	0xe
-	.uleb128 0x6
-	.long	.LASF26
-	.byte	0xf
 	.byte	0
 	.uleb128 0x3
-	.long	.LASF28
+	.long	.LASF20
 	.byte	0x2
-	.byte	0x1b
+	.byte	0x14
 	.long	0x7c
 	.uleb128 0x7
 	.byte	0x2
 	.byte	0x3
 	.byte	0xe
-	.long	0x119
+	.long	0xe9
 	.uleb128 0x8
-	.long	.LASF29
+	.long	.LASF21
 	.byte	0x3
 	.byte	0x10
-	.long	0xe9
+	.long	0xb9
 	.byte	0x2
 	.byte	0x23
 	.uleb128 0
 	.uleb128 0x8
-	.long	.LASF30
+	.long	.LASF22
 	.byte	0x3
 	.byte	0x11
 	.long	0x24
@@ -173,53 +149,53 @@ Sw_CfgArr:
 	.uleb128 0x1
 	.byte	0
 	.uleb128 0x3
-	.long	.LASF31
+	.long	.LASF23
 	.byte	0x3
 	.byte	0x12
-	.long	0xf4
+	.long	0xc4
 	.uleb128 0x5
 	.byte	0x1
 	.long	0x1d
 	.byte	0x4
 	.byte	0x15
-	.long	0x149
+	.long	0x119
 	.uleb128 0x6
-	.long	.LASF32
+	.long	.LASF24
 	.byte	0
 	.uleb128 0x6
-	.long	.LASF33
+	.long	.LASF25
 	.byte	0x1
 	.uleb128 0x6
-	.long	.LASF34
+	.long	.LASF26
 	.byte	0x2
 	.uleb128 0x6
-	.long	.LASF35
+	.long	.LASF27
 	.byte	0x3
 	.byte	0
 	.uleb128 0x9
-	.long	0x160
-	.long	0x159
+	.long	0x130
+	.long	0x129
 	.uleb128 0xa
-	.long	0x159
+	.long	0x129
 	.byte	0x2
 	.byte	0
 	.uleb128 0x2
 	.byte	0x2
 	.byte	0x7
-	.long	.LASF36
+	.long	.LASF28
 	.uleb128 0xb
-	.long	0x119
+	.long	0xe9
 	.uleb128 0xc
-	.long	.LASF40
+	.long	.LASF32
 	.byte	0x5
 	.byte	0xb
-	.long	0x177
+	.long	0x147
 	.byte	0x1
 	.byte	0x5
 	.byte	0x3
 	.long	Sw_CfgArr
 	.uleb128 0xb
-	.long	0x149
+	.long	0x119
 	.byte	0
 	.section	.debug_abbrev,"",@progbits
 .Ldebug_abbrev0:
@@ -383,31 +359,27 @@ Sw_CfgArr:
 	.section	.debug_str,"MS",@progbits,1
 .LASF14:
 	.string	"DIO_TST_PIN"
-.LASF34:
+.LASF26:
 	.string	"SW_POS"
 .LASF3:
 	.string	"short int"
-.LASF36:
-	.string	"sizetype"
-.LASF21:
-	.string	"DIO_SEG7_DB"
 .LASF28:
+	.string	"sizetype"
+.LASF20:
 	.string	"Dio_ChannelIdTyp"
-.LASF32:
-	.string	"SW_WIN_UP"
-.LASF38:
-	.string	"../HAL/Switch/Switch_Cfg/Switch_Cfg.c"
 .LASF24:
-	.string	"DIO_SEG7_DP"
+	.string	"SW_WIN_UP"
+.LASF30:
+	.string	"../HAL/Switch/Switch_Cfg/Switch_Cfg.c"
 .LASF6:
 	.string	"float"
 .LASF9:
 	.string	"long long int"
-.LASF26:
+.LASF18:
 	.string	"NUM_OF_CHANNELS"
 .LASF5:
 	.string	"long int"
-.LASF40:
+.LASF32:
 	.string	"Sw_CfgArr"
 .LASF11:
 	.string	"DIO_SW_0"
@@ -417,21 +389,15 @@ Sw_CfgArr:
 	.string	"DIO_SW_2"
 .LASF0:
 	.string	"unsigned char"
-.LASF30:
+.LASF22:
 	.string	"ActiveState"
 .LASF1:
 	.string	"signed char"
-.LASF20:
-	.string	"DIO_SEG7_DA"
 .LASF10:
 	.string	"long long unsigned int"
-.LASF22:
-	.string	"DIO_SEG7_DC"
-.LASF23:
-	.string	"DIO_SEG7_DD"
 .LASF8:
 	.string	"unsigned int"
-.LASF31:
+.LASF23:
 	.string	"Sw_SwTyp"
 .LASF15:
 	.string	"DIO_LED_0"
@@ -441,27 +407,21 @@ Sw_CfgArr:
 	.string	"DIO_LED_2"
 .LASF2:
 	.string	"short unsigned int"
-.LASF25:
-	.string	"DIO_PWD_0"
-.LASF18:
-	.string	"DIO_SEG7_En1"
-.LASF19:
-	.string	"DIO_SEG7_En2"
 .LASF4:
 	.string	"long unsigned int"
 .LASF7:
 	.string	"double"
-.LASF33:
+.LASF25:
 	.string	"SW_WIN_DOWN"
-.LASF37:
-	.string	"GNU C99 5.4.0 -mn-flash=1 -mno-skip-bug -mmcu=avr5 -g2 -O1 -std=gnu99 -funsigned-char -funsigned-bitfields -ffunction-sections -fdata-sections -fpack-struct -fshort-enums"
 .LASF29:
+	.string	"GNU C99 5.4.0 -mn-flash=1 -mno-skip-bug -mmcu=avr5 -g2 -O1 -std=gnu99 -funsigned-char -funsigned-bitfields -ffunction-sections -fdata-sections -fpack-struct -fshort-enums"
+.LASF21:
 	.string	"Sw_Id"
-.LASF35:
-	.string	"SW_NUM_OF_SW"
-.LASF39:
-	.string	"X:\\\\VALEO_testing_academy\\\\challenge1\\\\C_ExampleTraineeVersion\\\\C_Example\\\\Debug"
 .LASF27:
+	.string	"SW_NUM_OF_SW"
+.LASF31:
+	.string	"X:\\\\VALEO_testing_academy\\\\challenge1\\\\C_ExampleTraineeVersion\\\\C_Example\\\\Debug"
+.LASF19:
 	.string	"boolean"
 	.ident	"GCC: (AVR_8_bit_GNU_Toolchain_3.6.2_1778) 5.4.0"
 .global __do_copy_data

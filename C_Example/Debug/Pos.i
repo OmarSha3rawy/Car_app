@@ -614,14 +614,7 @@ typedef enum{
  DIO_LED_0,
  DIO_LED_1,
  DIO_LED_2,
- DIO_SEG7_En1,
- DIO_SEG7_En2,
- DIO_SEG7_DA,
- DIO_SEG7_DB,
- DIO_SEG7_DC,
- DIO_SEG7_DD,
- DIO_SEG7_DP,
- DIO_PWD_0,
+
  NUM_OF_CHANNELS
 }Dio_ChannelIdTyp;
 

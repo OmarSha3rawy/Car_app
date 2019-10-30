@@ -354,12 +354,12 @@ Timer0_500us_Cbk:
 	ldi r24,lo8(1)
 	sts u8IsTickCountersUpdated,r24
 	.loc 1 94 0
-	lds r24,IsPeriod_1ms.1983
+	lds r24,IsPeriod_1ms.1950
 	ldi r25,lo8(1)
 	cpse r24,__zero_reg__
 	ldi r25,0
 .L17:
-	sts IsPeriod_1ms.1983,r25
+	sts IsPeriod_1ms.1950,r25
 	.loc 1 96 0
 	cpse r24,__zero_reg__
 	rjmp .L18
@@ -391,10 +391,10 @@ Timer0_500us_Cbk:
 	.cfi_endproc
 .LFE7:
 	.size	Timer0_500us_Cbk, .-Timer0_500us_Cbk
-	.section	.data.IsPeriod_1ms.1983,"aw",@progbits
-	.type	IsPeriod_1ms.1983, @object
-	.size	IsPeriod_1ms.1983, 1
-IsPeriod_1ms.1983:
+	.section	.data.IsPeriod_1ms.1950,"aw",@progbits
+	.type	IsPeriod_1ms.1950, @object
+	.size	IsPeriod_1ms.1950, 1
+IsPeriod_1ms.1950:
 	.byte	1
 .global	u16Counter_500us
 	.section	.bss.u16Counter_500us,"aw",@nobits
@@ -419,19 +419,18 @@ u8IsTickCountersUpdated:
 	.file 2 ".././Std_Headers/Std_Types.h"
 	.file 3 ".././HAL/Led/Led_Src/Led.h"
 	.file 4 ".././HAL/Switch/Switch_Src/Switch.h"
-	.file 5 ".././HAL/Seg7/Seg7_Src/Seg7.h"
-	.file 6 ".././Tasks.h"
+	.file 5 ".././Tasks.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
-	.long	0x2a3
+	.long	0x284
 	.word	0x2
 	.long	.Ldebug_abbrev0
 	.byte	0x4
 	.uleb128 0x1
-	.long	.LASF40
+	.long	.LASF37
 	.byte	0xc
-	.long	.LASF41
-	.long	.LASF42
+	.long	.LASF38
+	.long	.LASF39
 	.long	.Ldebug_ranges0+0
 	.long	0
 	.long	0
@@ -532,25 +531,9 @@ u8IsTickCountersUpdated:
 	.long	.LASF20
 	.byte	0x3
 	.byte	0
-	.uleb128 0x5
-	.byte	0x1
-	.long	0x29
-	.byte	0x5
-	.byte	0xc
-	.long	0xfc
-	.uleb128 0x6
-	.long	.LASF21
-	.byte	0
-	.uleb128 0x6
-	.long	.LASF22
-	.byte	0x1
-	.uleb128 0x6
-	.long	.LASF23
-	.byte	0x2
-	.byte	0
 	.uleb128 0x7
 	.byte	0x1
-	.long	.LASF43
+	.long	.LASF40
 	.byte	0x1
 	.byte	0xe
 	.byte	0x1
@@ -563,50 +546,50 @@ u8IsTickCountersUpdated:
 	.uleb128 0x20
 	.sleb128 2
 	.byte	0x1
-	.long	0x191
+	.long	0x172
 	.uleb128 0x8
 	.long	.LVL0
-	.long	0x1fd
+	.long	0x1de
 	.uleb128 0x8
 	.long	.LVL1
-	.long	0x20a
+	.long	0x1eb
 	.uleb128 0x8
 	.long	.LVL2
-	.long	0x217
+	.long	0x1f8
 	.uleb128 0x8
 	.long	.LVL3
-	.long	0x224
+	.long	0x205
 	.uleb128 0x8
 	.long	.LVL4
-	.long	0x231
+	.long	0x212
 	.uleb128 0x8
 	.long	.LVL5
-	.long	0x23e
+	.long	0x21f
 	.uleb128 0x8
 	.long	.LVL6
-	.long	0x24b
+	.long	0x22c
 	.uleb128 0x8
 	.long	.LVL7
-	.long	0x258
+	.long	0x239
 	.uleb128 0x8
 	.long	.LVL8
-	.long	0x265
+	.long	0x246
 	.uleb128 0x8
 	.long	.LVL9
-	.long	0x272
+	.long	0x253
 	.uleb128 0x8
 	.long	.LVL10
-	.long	0x27f
+	.long	0x260
 	.uleb128 0x8
 	.long	.LVL11
-	.long	0x28c
+	.long	0x26d
 	.uleb128 0x8
 	.long	.LVL12
-	.long	0x299
+	.long	0x27a
 	.byte	0
 	.uleb128 0x9
 	.byte	0x1
-	.long	.LASF44
+	.long	.LASF41
 	.byte	0x1
 	.byte	0x59
 	.byte	0x1
@@ -617,21 +600,21 @@ u8IsTickCountersUpdated:
 	.uleb128 0x20
 	.sleb128 2
 	.byte	0x1
-	.long	0x1bd
+	.long	0x19e
 	.uleb128 0xa
-	.long	.LASF45
+	.long	.LASF42
 	.byte	0x1
 	.byte	0x5c
 	.long	0x30
 	.byte	0x5
 	.byte	0x3
-	.long	IsPeriod_1ms.1983
+	.long	IsPeriod_1ms.1950
 	.byte	0
 	.uleb128 0xb
-	.long	.LASF24
+	.long	.LASF21
 	.byte	0x1
 	.byte	0xa
-	.long	0x1cf
+	.long	0x1b0
 	.byte	0x1
 	.byte	0x5
 	.byte	0x3
@@ -639,10 +622,10 @@ u8IsTickCountersUpdated:
 	.uleb128 0xc
 	.long	0x30
 	.uleb128 0xb
-	.long	.LASF25
+	.long	.LASF22
 	.byte	0x1
 	.byte	0xb
-	.long	0x1e6
+	.long	0x1c7
 	.byte	0x1
 	.byte	0x5
 	.byte	0x3
@@ -650,10 +633,10 @@ u8IsTickCountersUpdated:
 	.uleb128 0xc
 	.long	0x42
 	.uleb128 0xb
-	.long	.LASF26
+	.long	.LASF23
 	.byte	0x1
 	.byte	0xc
-	.long	0x1e6
+	.long	0x1c7
 	.byte	0x1
 	.byte	0x5
 	.byte	0x3
@@ -661,94 +644,94 @@ u8IsTickCountersUpdated:
 	.uleb128 0xd
 	.byte	0x1
 	.byte	0x1
-	.long	.LASF27
-	.long	.LASF27
-	.byte	0x6
-	.byte	0x2b
-	.uleb128 0xd
-	.byte	0x1
-	.byte	0x1
-	.long	.LASF28
-	.long	.LASF28
-	.byte	0x6
+	.long	.LASF24
+	.long	.LASF24
+	.byte	0x5
 	.byte	0x2a
 	.uleb128 0xd
 	.byte	0x1
 	.byte	0x1
-	.long	.LASF29
-	.long	.LASF29
-	.byte	0x6
+	.long	.LASF25
+	.long	.LASF25
+	.byte	0x5
+	.byte	0x29
+	.uleb128 0xd
+	.byte	0x1
+	.byte	0x1
+	.long	.LASF26
+	.long	.LASF26
+	.byte	0x5
+	.byte	0x2b
+	.uleb128 0xd
+	.byte	0x1
+	.byte	0x1
+	.long	.LASF27
+	.long	.LASF27
+	.byte	0x5
 	.byte	0x2c
 	.uleb128 0xd
 	.byte	0x1
 	.byte	0x1
-	.long	.LASF30
-	.long	.LASF30
-	.byte	0x6
+	.long	.LASF28
+	.long	.LASF28
+	.byte	0x5
 	.byte	0x2d
 	.uleb128 0xd
 	.byte	0x1
 	.byte	0x1
-	.long	.LASF31
-	.long	.LASF31
-	.byte	0x6
+	.long	.LASF29
+	.long	.LASF29
+	.byte	0x5
 	.byte	0x2e
 	.uleb128 0xd
 	.byte	0x1
 	.byte	0x1
-	.long	.LASF32
-	.long	.LASF32
-	.byte	0x6
+	.long	.LASF30
+	.long	.LASF30
+	.byte	0x5
 	.byte	0x2f
 	.uleb128 0xd
 	.byte	0x1
 	.byte	0x1
-	.long	.LASF33
-	.long	.LASF33
-	.byte	0x6
+	.long	.LASF31
+	.long	.LASF31
+	.byte	0x5
 	.byte	0x30
 	.uleb128 0xd
 	.byte	0x1
 	.byte	0x1
-	.long	.LASF34
-	.long	.LASF34
-	.byte	0x6
+	.long	.LASF32
+	.long	.LASF32
+	.byte	0x5
 	.byte	0x31
 	.uleb128 0xd
 	.byte	0x1
 	.byte	0x1
-	.long	.LASF35
-	.long	.LASF35
-	.byte	0x6
+	.long	.LASF33
+	.long	.LASF33
+	.byte	0x5
 	.byte	0x32
 	.uleb128 0xd
 	.byte	0x1
 	.byte	0x1
-	.long	.LASF36
-	.long	.LASF36
-	.byte	0x6
+	.long	.LASF34
+	.long	.LASF34
+	.byte	0x5
 	.byte	0x33
 	.uleb128 0xd
 	.byte	0x1
 	.byte	0x1
-	.long	.LASF37
-	.long	.LASF37
-	.byte	0x6
+	.long	.LASF35
+	.long	.LASF35
+	.byte	0x5
 	.byte	0x34
 	.uleb128 0xd
 	.byte	0x1
 	.byte	0x1
-	.long	.LASF38
-	.long	.LASF38
-	.byte	0x6
+	.long	.LASF36
+	.long	.LASF36
+	.byte	0x5
 	.byte	0x35
-	.uleb128 0xd
-	.byte	0x1
-	.byte	0x1
-	.long	.LASF39
-	.long	.LASF39
-	.byte	0x6
-	.byte	0x36
 	.byte	0
 	.section	.debug_abbrev,"",@progbits
 .Ldebug_abbrev0:
@@ -977,98 +960,92 @@ u8IsTickCountersUpdated:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
-.LASF41:
-	.string	".././main.c"
-.LASF27:
+.LASF19:
+	.string	"SW_POS"
+.LASF25:
+	.string	"Task_500us"
+.LASF5:
+	.string	"short int"
+.LASF24:
 	.string	"Task_Init"
-.LASF38:
-	.string	"Task_1000ms"
-.LASF22:
-	.string	"SEG7_DISPLAY1"
-.LASF26:
-	.string	"u16Counter_500us"
-.LASF10:
-	.string	"unsigned int"
+.LASF15:
+	.string	"LED_LED2"
+.LASF21:
+	.string	"u8IsTickCountersUpdated"
+.LASF29:
+	.string	"Task_10ms"
+.LASF40:
+	.string	"main"
+.LASF31:
+	.string	"Task_50ms"
+.LASF3:
+	.string	"uint16"
 .LASF17:
 	.string	"SW_WIN_UP"
 .LASF8:
 	.string	"float"
-.LASF37:
-	.string	"Task_500ms"
-.LASF0:
-	.string	"unsigned char"
-.LASF35:
-	.string	"Task_100ms"
-.LASF44:
-	.string	"Timer0_500us_Cbk"
-.LASF15:
-	.string	"LED_LED2"
-.LASF40:
-	.string	"GNU C99 5.4.0 -mn-flash=1 -mno-skip-bug -mmcu=avr5 -g2 -O1 -std=gnu99 -funsigned-char -funsigned-bitfields -ffunction-sections -fdata-sections -fpack-struct -fshort-enums"
-.LASF6:
-	.string	"long unsigned int"
-.LASF4:
-	.string	"short unsigned int"
-.LASF34:
-	.string	"Task_50ms"
-.LASF39:
-	.string	"Task_2000ms"
-.LASF18:
-	.string	"SW_WIN_DOWN"
-.LASF29:
-	.string	"Task_1ms"
-.LASF9:
-	.string	"double"
-.LASF24:
-	.string	"u8IsTickCountersUpdated"
-.LASF45:
-	.string	"IsPeriod_1ms"
-.LASF20:
-	.string	"SW_NUM_OF_SW"
-.LASF3:
-	.string	"uint16"
-.LASF28:
-	.string	"Task_500us"
-.LASF32:
-	.string	"Task_10ms"
-.LASF43:
-	.string	"main"
-.LASF31:
-	.string	"Task_5ms"
-.LASF36:
-	.string	"Task_200ms"
-.LASF42:
-	.string	"X:\\\\VALEO_testing_academy\\\\challenge1\\\\C_ExampleTraineeVersion\\\\C_Example\\\\Debug"
-.LASF12:
-	.string	"long long unsigned int"
-.LASF21:
-	.string	"SEG7_DISPLAY0"
-.LASF25:
-	.string	"u16Counter_1ms"
-.LASF30:
-	.string	"Task_2ms"
 .LASF11:
 	.string	"long long int"
-.LASF14:
-	.string	"LED_MOTOR_DOWN"
-.LASF33:
-	.string	"Task_20ms"
-.LASF5:
-	.string	"short int"
-.LASF19:
-	.string	"SW_POS"
-.LASF16:
-	.string	"LED_NUM_OF_LEDS"
 .LASF7:
 	.string	"long int"
+.LASF36:
+	.string	"Task_2000ms"
+.LASF30:
+	.string	"Task_20ms"
+.LASF28:
+	.string	"Task_5ms"
+.LASF0:
+	.string	"unsigned char"
+.LASF32:
+	.string	"Task_100ms"
 .LASF1:
 	.string	"signed char"
-.LASF2:
-	.string	"boolean"
+.LASF12:
+	.string	"long long unsigned int"
+.LASF10:
+	.string	"unsigned int"
 .LASF23:
-	.string	"SEG7_NUM_OF_DIS"
+	.string	"u16Counter_500us"
+.LASF26:
+	.string	"Task_1ms"
+.LASF38:
+	.string	".././main.c"
+.LASF4:
+	.string	"short unsigned int"
 .LASF13:
 	.string	"LED_MOTOR_UP"
+.LASF6:
+	.string	"long unsigned int"
+.LASF9:
+	.string	"double"
+.LASF27:
+	.string	"Task_2ms"
+.LASF18:
+	.string	"SW_WIN_DOWN"
+.LASF37:
+	.string	"GNU C99 5.4.0 -mn-flash=1 -mno-skip-bug -mmcu=avr5 -g2 -O1 -std=gnu99 -funsigned-char -funsigned-bitfields -ffunction-sections -fdata-sections -fpack-struct -fshort-enums"
+.LASF41:
+	.string	"Timer0_500us_Cbk"
+.LASF22:
+	.string	"u16Counter_1ms"
+.LASF33:
+	.string	"Task_200ms"
+.LASF14:
+	.string	"LED_MOTOR_DOWN"
+.LASF35:
+	.string	"Task_1000ms"
+.LASF20:
+	.string	"SW_NUM_OF_SW"
+.LASF42:
+	.string	"IsPeriod_1ms"
+.LASF39:
+	.string	"X:\\\\VALEO_testing_academy\\\\challenge1\\\\C_ExampleTraineeVersion\\\\C_Example\\\\Debug"
+.LASF34:
+	.string	"Task_500ms"
+.LASF16:
+	.string	"LED_NUM_OF_LEDS"
+.LASF2:
+	.string	"boolean"
 	.ident	"GCC: (AVR_8_bit_GNU_Toolchain_3.6.2_1778) 5.4.0"
 .global __do_copy_data
 .global __do_clear_bss

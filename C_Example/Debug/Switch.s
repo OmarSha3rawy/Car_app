@@ -146,8 +146,8 @@ Sw_UpdateState_Cyclic:
 	ldi r31,hi8(Sw_CfgArr)
 	mov r15,r31
 	mov r31,__tmp_reg__
-	ldi r16,lo8(SwState.1883)
-	ldi r17,hi8(SwState.1883)
+	ldi r16,lo8(SwState.1875)
+	ldi r17,hi8(SwState.1875)
 	mov __tmp_reg__,r31
 	ldi r31,lo8(SwValue)
 	mov r12,r31
@@ -155,9 +155,9 @@ Sw_UpdateState_Cyclic:
 	mov r13,r31
 	mov r31,__tmp_reg__
 	mov __tmp_reg__,r31
-	ldi r31,lo8(SwState.1883+3)
+	ldi r31,lo8(SwState.1875+3)
 	mov r10,r31
-	ldi r31,hi8(SwState.1883+3)
+	ldi r31,hi8(SwState.1875+3)
 	mov r11,r31
 	mov r31,__tmp_reg__
 	.loc 1 61 0
@@ -380,8 +380,8 @@ Sw_GetStateOnce:
 	.loc 1 149 0 is_stmt 1
 	ldi r25,0
 	movw r30,r24
-	subi r30,lo8(-(State.1905))
-	sbci r31,hi8(-(State.1905))
+	subi r30,lo8(-(State.1897))
+	sbci r31,hi8(-(State.1897))
 	ld r18,Z
 	cpi r18,lo8(1)
 	breq .L26
@@ -402,8 +402,8 @@ Sw_GetStateOnce:
 	brne .L29
 	.loc 1 156 0
 	movw r30,r24
-	subi r30,lo8(-(State.1905))
-	sbci r31,hi8(-(State.1905))
+	subi r30,lo8(-(State.1897))
+	sbci r31,hi8(-(State.1897))
 	st Z,r18
 	.loc 1 140 0
 	ldi r24,0
@@ -413,8 +413,8 @@ Sw_GetStateOnce:
 .L29:
 	.loc 1 160 0
 	movw r30,r24
-	subi r30,lo8(-(State.1905))
-	sbci r31,hi8(-(State.1905))
+	subi r30,lo8(-(State.1897))
+	sbci r31,hi8(-(State.1897))
 	st Z,__zero_reg__
 	.loc 1 140 0
 	ldi r24,0
@@ -435,8 +435,8 @@ Sw_GetStateOnce:
 	brne .L30
 	.loc 1 169 0
 	movw r30,r24
-	subi r30,lo8(-(State.1905))
-	sbci r31,hi8(-(State.1905))
+	subi r30,lo8(-(State.1897))
+	sbci r31,hi8(-(State.1897))
 	ldi r18,lo8(2)
 	st Z,r18
 	.loc 1 140 0
@@ -447,8 +447,8 @@ Sw_GetStateOnce:
 .L30:
 	.loc 1 173 0
 	movw r30,r24
-	subi r30,lo8(-(State.1905))
-	sbci r31,hi8(-(State.1905))
+	subi r30,lo8(-(State.1897))
+	sbci r31,hi8(-(State.1897))
 	st Z,__zero_reg__
 	.loc 1 140 0
 	ldi r24,0
@@ -468,8 +468,8 @@ Sw_GetStateOnce:
 	brne .L31
 	.loc 1 182 0
 	movw r30,r24
-	subi r30,lo8(-(State.1905))
-	sbci r31,hi8(-(State.1905))
+	subi r30,lo8(-(State.1897))
+	sbci r31,hi8(-(State.1897))
 	ldi r18,lo8(2)
 	st Z,r18
 	.loc 1 140 0
@@ -480,8 +480,8 @@ Sw_GetStateOnce:
 .L31:
 	.loc 1 186 0
 	movw r30,r24
-	subi r30,lo8(-(State.1905))
-	sbci r31,hi8(-(State.1905))
+	subi r30,lo8(-(State.1897))
+	sbci r31,hi8(-(State.1897))
 	st Z,__zero_reg__
 	.loc 1 140 0
 	ldi r24,0
@@ -508,15 +508,15 @@ Sw_GetStateOnce:
 	.cfi_endproc
 .LFE9:
 	.size	Sw_GetStateOnce, .-Sw_GetStateOnce
-	.section	.bss.State.1905,"aw",@nobits
-	.type	State.1905, @object
-	.size	State.1905, 3
-State.1905:
+	.section	.bss.State.1897,"aw",@nobits
+	.type	State.1897, @object
+	.size	State.1897, 3
+State.1897:
 	.zero	3
-	.section	.bss.SwState.1883,"aw",@nobits
-	.type	SwState.1883, @object
-	.size	SwState.1883, 3
-SwState.1883:
+	.section	.bss.SwState.1875,"aw",@nobits
+	.type	SwState.1875, @object
+	.size	SwState.1875, 3
+SwState.1875:
 	.zero	3
 	.section	.bss.SwValue,"aw",@nobits
 	.type	SwValue, @object
@@ -536,15 +536,15 @@ SwInitState:
 	.file 5 "../HAL/Switch/Switch_Src/Switch.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
-	.long	0x40c
+	.long	0x3dc
 	.word	0x2
 	.long	.Ldebug_abbrev0
 	.byte	0x4
 	.uleb128 0x1
-	.long	.LASF67
+	.long	.LASF59
 	.byte	0xc
-	.long	.LASF68
-	.long	.LASF69
+	.long	.LASF60
+	.long	.LASF61
 	.long	.Ldebug_ranges0+0
 	.long	0
 	.long	0
@@ -630,7 +630,7 @@ SwInitState:
 	.long	0x34
 	.byte	0x3
 	.byte	0xa
-	.long	0x124
+	.long	0xf4
 	.uleb128 0x5
 	.long	.LASF16
 	.byte	0
@@ -655,51 +655,27 @@ SwInitState:
 	.uleb128 0x5
 	.long	.LASF23
 	.byte	0x7
-	.uleb128 0x5
-	.long	.LASF24
-	.byte	0x8
-	.uleb128 0x5
-	.long	.LASF25
-	.byte	0x9
-	.uleb128 0x5
-	.long	.LASF26
-	.byte	0xa
-	.uleb128 0x5
-	.long	.LASF27
-	.byte	0xb
-	.uleb128 0x5
-	.long	.LASF28
-	.byte	0xc
-	.uleb128 0x5
-	.long	.LASF29
-	.byte	0xd
-	.uleb128 0x5
-	.long	.LASF30
-	.byte	0xe
-	.uleb128 0x5
-	.long	.LASF31
-	.byte	0xf
 	.byte	0
 	.uleb128 0x2
-	.long	.LASF32
+	.long	.LASF24
 	.byte	0x3
-	.byte	0x1b
+	.byte	0x14
 	.long	0xb7
 	.uleb128 0x7
 	.byte	0x2
 	.byte	0x4
 	.byte	0xe
-	.long	0x154
+	.long	0x124
 	.uleb128 0x8
-	.long	.LASF33
+	.long	.LASF25
 	.byte	0x4
 	.byte	0x10
-	.long	0x124
+	.long	0xf4
 	.byte	0x2
 	.byte	0x23
 	.uleb128 0
 	.uleb128 0x8
-	.long	.LASF34
+	.long	.LASF26
 	.byte	0x4
 	.byte	0x11
 	.long	0x3b
@@ -708,16 +684,58 @@ SwInitState:
 	.uleb128 0x1
 	.byte	0
 	.uleb128 0x2
-	.long	.LASF35
+	.long	.LASF27
 	.byte	0x4
 	.byte	0x12
-	.long	0x12f
+	.long	0xff
 	.uleb128 0x4
 	.byte	0x1
 	.long	0x34
 	.byte	0x5
 	.byte	0x15
-	.long	0x184
+	.long	0x154
+	.uleb128 0x5
+	.long	.LASF28
+	.byte	0
+	.uleb128 0x5
+	.long	.LASF29
+	.byte	0x1
+	.uleb128 0x5
+	.long	.LASF30
+	.byte	0x2
+	.uleb128 0x5
+	.long	.LASF31
+	.byte	0x3
+	.byte	0
+	.uleb128 0x2
+	.long	.LASF32
+	.byte	0x5
+	.byte	0x1a
+	.long	0x12f
+	.uleb128 0x4
+	.byte	0x1
+	.long	0x34
+	.byte	0x5
+	.byte	0x1c
+	.long	0x178
+	.uleb128 0x5
+	.long	.LASF33
+	.byte	0
+	.uleb128 0x5
+	.long	.LASF34
+	.byte	0x1
+	.byte	0
+	.uleb128 0x2
+	.long	.LASF35
+	.byte	0x5
+	.byte	0x1c
+	.long	0x15f
+	.uleb128 0x4
+	.byte	0x1
+	.long	0x34
+	.byte	0x1
+	.byte	0xa
+	.long	0x1a8
 	.uleb128 0x5
 	.long	.LASF36
 	.byte	0
@@ -733,75 +751,33 @@ SwInitState:
 	.byte	0
 	.uleb128 0x2
 	.long	.LASF40
-	.byte	0x5
-	.byte	0x1a
-	.long	0x15f
+	.byte	0x1
+	.byte	0xa
+	.long	0x183
 	.uleb128 0x4
 	.byte	0x1
 	.long	0x34
-	.byte	0x5
-	.byte	0x1c
-	.long	0x1a8
+	.byte	0x1
+	.byte	0xb
+	.long	0x1d2
 	.uleb128 0x5
 	.long	.LASF41
 	.byte	0
 	.uleb128 0x5
 	.long	.LASF42
 	.byte	0x1
-	.byte	0
-	.uleb128 0x2
+	.uleb128 0x5
 	.long	.LASF43
-	.byte	0x5
-	.byte	0x1c
-	.long	0x18f
-	.uleb128 0x4
-	.byte	0x1
-	.long	0x34
-	.byte	0x1
-	.byte	0xa
-	.long	0x1d8
-	.uleb128 0x5
+	.byte	0x2
+	.byte	0
+	.uleb128 0x2
 	.long	.LASF44
-	.byte	0
-	.uleb128 0x5
-	.long	.LASF45
 	.byte	0x1
-	.uleb128 0x5
-	.long	.LASF46
-	.byte	0x2
-	.uleb128 0x5
-	.long	.LASF47
-	.byte	0x3
-	.byte	0
-	.uleb128 0x2
-	.long	.LASF48
-	.byte	0x1
-	.byte	0xa
+	.byte	0xb
 	.long	0x1b3
-	.uleb128 0x4
-	.byte	0x1
-	.long	0x34
-	.byte	0x1
-	.byte	0xb
-	.long	0x202
-	.uleb128 0x5
-	.long	.LASF49
-	.byte	0
-	.uleb128 0x5
-	.long	.LASF50
-	.byte	0x1
-	.uleb128 0x5
-	.long	.LASF51
-	.byte	0x2
-	.byte	0
-	.uleb128 0x2
-	.long	.LASF52
-	.byte	0x1
-	.byte	0xb
-	.long	0x1e3
 	.uleb128 0x9
 	.byte	0x1
-	.long	.LASF55
+	.long	.LASF47
 	.byte	0x1
 	.byte	0xf
 	.byte	0x1
@@ -813,15 +789,15 @@ SwInitState:
 	.uleb128 0x20
 	.sleb128 2
 	.byte	0x1
-	.long	0x247
+	.long	0x217
 	.uleb128 0xa
-	.long	.LASF53
+	.long	.LASF45
 	.byte	0x1
 	.byte	0x11
 	.long	0x90
 	.byte	0
 	.uleb128 0xb
-	.long	.LASF54
+	.long	.LASF46
 	.byte	0x1
 	.byte	0x12
 	.long	0x29
@@ -829,7 +805,7 @@ SwInitState:
 	.byte	0
 	.uleb128 0xc
 	.byte	0x1
-	.long	.LASF56
+	.long	.LASF48
 	.byte	0x1
 	.byte	0x28
 	.byte	0x1
@@ -838,35 +814,35 @@ SwInitState:
 	.long	.LFE7
 	.long	.LLST1
 	.byte	0x1
-	.long	0x2c7
+	.long	0x297
 	.uleb128 0xb
-	.long	.LASF53
+	.long	.LASF45
 	.byte	0x1
 	.byte	0x2a
 	.long	0x90
 	.long	.LLST2
 	.uleb128 0xb
-	.long	.LASF57
+	.long	.LASF49
 	.byte	0x1
 	.byte	0x2b
-	.long	0x2c7
+	.long	0x297
 	.long	.LLST3
 	.uleb128 0xd
-	.long	.LASF58
+	.long	.LASF50
 	.byte	0x1
 	.byte	0x2c
-	.long	0x2d2
+	.long	0x2a2
 	.byte	0x5
 	.byte	0x3
-	.long	SwState.1883
+	.long	SwState.1875
 	.uleb128 0xb
-	.long	.LASF54
+	.long	.LASF46
 	.byte	0x1
 	.byte	0x2d
 	.long	0x29
 	.long	.LLST4
 	.uleb128 0xd
-	.long	.LASF59
+	.long	.LASF51
 	.byte	0x1
 	.byte	0x2e
 	.long	0x3b
@@ -875,7 +851,7 @@ SwInitState:
 	.sleb128 1
 	.uleb128 0xe
 	.long	.LVL6
-	.long	0x402
+	.long	0x3d2
 	.uleb128 0xf
 	.byte	0x6
 	.byte	0x66
@@ -891,23 +867,23 @@ SwInitState:
 	.byte	0
 	.uleb128 0x10
 	.byte	0x2
-	.long	0x2cd
+	.long	0x29d
 	.uleb128 0x11
-	.long	0x154
+	.long	0x124
 	.uleb128 0x12
-	.long	0x1d8
-	.long	0x2e2
+	.long	0x1a8
+	.long	0x2b2
 	.uleb128 0x13
-	.long	0x2e2
+	.long	0x2b2
 	.byte	0x2
 	.byte	0
 	.uleb128 0x3
 	.byte	0x2
 	.byte	0x7
-	.long	.LASF60
+	.long	.LASF52
 	.uleb128 0x9
 	.byte	0x1
-	.long	.LASF61
+	.long	.LASF53
 	.byte	0x1
 	.byte	0x7a
 	.byte	0x1
@@ -919,18 +895,18 @@ SwInitState:
 	.uleb128 0x20
 	.sleb128 2
 	.byte	0x1
-	.long	0x338
+	.long	0x308
 	.uleb128 0x14
-	.long	.LASF62
+	.long	.LASF54
 	.byte	0x1
 	.byte	0x7a
-	.long	0x184
+	.long	0x154
 	.long	.LLST5
 	.uleb128 0x15
-	.long	.LASF58
+	.long	.LASF50
 	.byte	0x1
 	.byte	0x7a
-	.long	0x338
+	.long	0x308
 	.byte	0x6
 	.byte	0x66
 	.byte	0x93
@@ -939,7 +915,7 @@ SwInitState:
 	.byte	0x93
 	.uleb128 0x1
 	.uleb128 0xb
-	.long	.LASF53
+	.long	.LASF45
 	.byte	0x1
 	.byte	0x7c
 	.long	0x90
@@ -950,7 +926,7 @@ SwInitState:
 	.long	0x3b
 	.uleb128 0x9
 	.byte	0x1
-	.long	.LASF63
+	.long	.LASF55
 	.byte	0x1
 	.byte	0x8a
 	.byte	0x1
@@ -962,18 +938,18 @@ SwInitState:
 	.uleb128 0x20
 	.sleb128 2
 	.byte	0x1
-	.long	0x39e
+	.long	0x36e
 	.uleb128 0x14
-	.long	.LASF62
+	.long	.LASF54
 	.byte	0x1
 	.byte	0x8a
-	.long	0x184
+	.long	0x154
 	.long	.LLST7
 	.uleb128 0x15
-	.long	.LASF58
+	.long	.LASF50
 	.byte	0x1
 	.byte	0x8a
-	.long	0x338
+	.long	0x308
 	.byte	0x6
 	.byte	0x66
 	.byte	0x93
@@ -982,73 +958,73 @@ SwInitState:
 	.byte	0x93
 	.uleb128 0x1
 	.uleb128 0xb
-	.long	.LASF53
+	.long	.LASF45
 	.byte	0x1
 	.byte	0x8c
 	.long	0x90
 	.long	.LLST8
 	.uleb128 0xd
-	.long	.LASF64
+	.long	.LASF56
 	.byte	0x1
 	.byte	0x8d
-	.long	0x39e
+	.long	0x36e
 	.byte	0x5
 	.byte	0x3
-	.long	State.1905
+	.long	State.1897
 	.byte	0
 	.uleb128 0x12
-	.long	0x202
-	.long	0x3ae
+	.long	0x1d2
+	.long	0x37e
 	.uleb128 0x13
-	.long	0x2e2
+	.long	0x2b2
 	.byte	0x2
 	.byte	0
 	.uleb128 0xd
-	.long	.LASF65
+	.long	.LASF57
 	.byte	0x1
 	.byte	0xc
-	.long	0x1a8
+	.long	0x178
 	.byte	0x5
 	.byte	0x3
 	.long	SwInitState
 	.uleb128 0x12
 	.long	0x3b
-	.long	0x3cf
+	.long	0x39f
 	.uleb128 0x13
-	.long	0x2e2
+	.long	0x2b2
 	.byte	0x2
 	.byte	0
 	.uleb128 0xd
-	.long	.LASF66
+	.long	.LASF58
 	.byte	0x1
 	.byte	0xd
-	.long	0x3bf
+	.long	0x38f
 	.byte	0x5
 	.byte	0x3
 	.long	SwValue
 	.uleb128 0x12
-	.long	0x2cd
-	.long	0x3f0
+	.long	0x29d
+	.long	0x3c0
 	.uleb128 0x13
-	.long	0x2e2
+	.long	0x2b2
 	.byte	0x2
 	.byte	0
 	.uleb128 0x16
-	.long	.LASF70
+	.long	.LASF62
 	.byte	0x5
 	.byte	0x25
-	.long	0x3fd
+	.long	0x3cd
 	.byte	0x1
 	.byte	0x1
 	.uleb128 0x11
-	.long	0x3e0
+	.long	0x3b0
 	.uleb128 0x17
 	.byte	0x1
 	.byte	0x1
-	.long	.LASF71
-	.long	.LASF71
+	.long	.LASF63
+	.long	.LASF63
 	.byte	0x3
-	.byte	0x20
+	.byte	0x19
 	.byte	0
 	.section	.debug_abbrev,"",@progbits
 .Ldebug_abbrev0:
@@ -1556,7 +1532,7 @@ SwInitState:
 	.byte	0x80
 	.sleb128 0
 	.byte	0x3
-	.long	SwState.1883
+	.long	SwState.1875
 	.byte	0x1c
 	.byte	0x9f
 	.long	.LVL7
@@ -1565,7 +1541,7 @@ SwInitState:
 	.byte	0x80
 	.sleb128 0
 	.byte	0x3
-	.long	SwState.1883
+	.long	SwState.1875
 	.byte	0x1c
 	.byte	0x23
 	.uleb128 0x1
@@ -1576,7 +1552,7 @@ SwInitState:
 	.byte	0x8e
 	.sleb128 0
 	.byte	0x3
-	.long	SwState.1883
+	.long	SwState.1875
 	.byte	0x1c
 	.byte	0x23
 	.uleb128 0x1
@@ -1587,7 +1563,7 @@ SwInitState:
 	.byte	0x80
 	.sleb128 0
 	.byte	0x3
-	.long	SwState.1883
+	.long	SwState.1875
 	.byte	0x1c
 	.byte	0x9f
 	.long	.LVL10
@@ -1792,59 +1768,55 @@ SwInitState:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
-.LASF48:
+.LASF40:
 	.string	"Sw_StateTyp"
 .LASF19:
 	.string	"DIO_TST_PIN"
-.LASF57:
+.LASF49:
 	.string	"CfgPtr"
-.LASF40:
+.LASF32:
 	.string	"Sw_SwIdTyp"
-.LASF58:
+.LASF50:
 	.string	"SwState"
-.LASF38:
+.LASF30:
 	.string	"SW_POS"
-.LASF68:
+.LASF60:
 	.string	"../HAL/Switch/Switch_Src/Switch.c"
 .LASF5:
 	.string	"short int"
-.LASF53:
+.LASF45:
 	.string	"RetVal"
-.LASF60:
+.LASF52:
 	.string	"sizetype"
-.LASF66:
+.LASF58:
 	.string	"SwValue"
-.LASF26:
-	.string	"DIO_SEG7_DB"
 .LASF10:
 	.string	"STD_OK"
-.LASF43:
+.LASF35:
 	.string	"Sw_InitTyp"
 .LASF0:
 	.string	"uint8"
-.LASF32:
+.LASF24:
 	.string	"Dio_ChannelIdTyp"
-.LASF36:
+.LASF28:
 	.string	"SW_WIN_UP"
-.LASF62:
+.LASF54:
 	.string	"SwId"
-.LASF47:
+.LASF39:
 	.string	"SW_PRE_RELEASED"
-.LASF29:
-	.string	"DIO_SEG7_DP"
 .LASF8:
 	.string	"float"
 .LASF14:
 	.string	"long long int"
-.LASF31:
+.LASF23:
 	.string	"NUM_OF_CHANNELS"
-.LASF64:
+.LASF56:
 	.string	"State"
 .LASF7:
 	.string	"long int"
-.LASF63:
+.LASF55:
 	.string	"Sw_GetStateOnce"
-.LASF70:
+.LASF62:
 	.string	"Sw_CfgArr"
 .LASF16:
 	.string	"DIO_SW_0"
@@ -1852,31 +1824,25 @@ SwInitState:
 	.string	"DIO_SW_1"
 .LASF18:
 	.string	"DIO_SW_2"
-.LASF50:
+.LASF42:
 	.string	"SW_ONCE_PRESSED"
 .LASF2:
 	.string	"unsigned char"
-.LASF34:
+.LASF26:
 	.string	"ActiveState"
 .LASF3:
 	.string	"signed char"
-.LASF25:
-	.string	"DIO_SEG7_DA"
 .LASF15:
 	.string	"long long unsigned int"
-.LASF27:
-	.string	"DIO_SEG7_DC"
-.LASF28:
-	.string	"DIO_SEG7_DD"
-.LASF61:
+.LASF53:
 	.string	"Sw_GetState"
 .LASF13:
 	.string	"unsigned int"
-.LASF42:
+.LASF34:
 	.string	"SW_UNINITIALIZED"
-.LASF49:
+.LASF41:
 	.string	"SW_ONCE_RELEASED"
-.LASF35:
+.LASF27:
 	.string	"Sw_SwTyp"
 .LASF20:
 	.string	"DIO_LED_0"
@@ -1888,53 +1854,47 @@ SwInitState:
 	.string	"Std_RetTyp"
 .LASF4:
 	.string	"short unsigned int"
-.LASF30:
-	.string	"DIO_PWD_0"
-.LASF23:
-	.string	"DIO_SEG7_En1"
-.LASF24:
-	.string	"DIO_SEG7_En2"
-.LASF59:
+.LASF63:
+	.string	"Dio_Read"
+.LASF51:
 	.string	"PinState"
-.LASF56:
+.LASF48:
 	.string	"Sw_UpdateState_Cyclic"
-.LASF54:
+.LASF46:
 	.string	"SwIdx"
-.LASF44:
+.LASF36:
 	.string	"SW_RELEASED"
-.LASF55:
+.LASF47:
 	.string	"Sw_Init"
 .LASF6:
 	.string	"long unsigned int"
 .LASF9:
 	.string	"double"
-.LASF41:
+.LASF33:
 	.string	"SW_INITALIZED"
-.LASF37:
+.LASF29:
 	.string	"SW_WIN_DOWN"
-.LASF67:
+.LASF59:
 	.string	"GNU C99 5.4.0 -mn-flash=1 -mno-skip-bug -mmcu=avr5 -g2 -O1 -std=gnu99 -funsigned-char -funsigned-bitfields -ffunction-sections -fdata-sections -fpack-struct -fshort-enums"
 .LASF11:
 	.string	"STD_NOT_OK"
-.LASF65:
+.LASF57:
 	.string	"SwInitState"
-.LASF33:
+.LASF25:
 	.string	"Sw_Id"
-.LASF39:
+.LASF31:
 	.string	"SW_NUM_OF_SW"
-.LASF69:
+.LASF61:
 	.string	"X:\\\\VALEO_testing_academy\\\\challenge1\\\\C_ExampleTraineeVersion\\\\C_Example\\\\Debug"
-.LASF71:
-	.string	"Dio_Read"
-.LASF51:
+.LASF43:
 	.string	"SW_ONCE_POST_PRESSED"
-.LASF45:
+.LASF37:
 	.string	"SW_PRE_PRESSED"
-.LASF52:
+.LASF44:
 	.string	"Sw_StateOnceTyp"
 .LASF1:
 	.string	"boolean"
-.LASF46:
+.LASF38:
 	.string	"SW_PRESSED"
 	.ident	"GCC: (AVR_8_bit_GNU_Toolchain_3.6.2_1778) 5.4.0"
 .global __do_copy_data
